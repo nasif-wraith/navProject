@@ -1,0 +1,36 @@
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe.config
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe.manifest
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\bin\Debug\Navy Registration.application
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\bin\Debug\Navy Registration.pdb
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\Navy Registration.g.resources
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Properties.Resources.resources
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Loader.resources
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Login.resources
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.csproj.GenerateResource.Cache
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\Navy Registration.exe.manifest
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\Navy Registration.application
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\Navy Registration.exe
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\Navy Registration.pdb
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.RegistrationFormMain.resources
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.EmployeeRegistrationView.resources
+G:\Prince Vai Nav\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.csprojResolveAssemblyReference.cache
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe.config
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\Navy Registration.exe
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\Navy Registration.pdb
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe.manifest
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\bin\Debug\Navy Registration.application
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\bin\Debug\Navy Registration.pdb
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.csprojResolveAssemblyReference.cache
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\Navy Registration.g.resources
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Properties.Resources.resources
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.EmployeeRegistrationView.resources
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Loader.resources
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Login.resources
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.RegistrationFormMain.resources
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.csproj.GenerateResource.Cache
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\Navy Registration.exe.manifest
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\Navy Registration.application
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Rank.resources
+E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.UserAdd.resources
