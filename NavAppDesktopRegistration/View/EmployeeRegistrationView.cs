@@ -109,11 +109,12 @@ namespace NavAppDesktopRegistration
            // string rank = rankCombo.SelectedText;
             string dept = dept_combo.SelectedText;
             string branch = branch_combo.SelectedText;
-            string dob = dob_dateTimePicker.Value.ToString("yyyy-MM-dd");
+            string dob = "'" + dob_dateTimePicker.Value.ToString("yyyy-MM-dd")+ "'";
+            //DateTime dob = dob_dateTimePicker.Value.Date
             string height = height_box.Text;
             string blood_Group = bloodGrpCombo.SelectedText;
             string identification = identificationMark_box.Text;
-            string doj = doj_datetimepicker.Value.ToString("yyyy-mm-dd");
+            string doj = "'" + doj_datetimepicker.Value.ToString("yyyy-mm-dd") + "'";
             string employer_catagory = EmployeesCatagory_box.Text;
             string marital_status = maritalStatus_combo.SelectedText;
             string present_address = presentAddress_box.Text;
@@ -188,9 +189,9 @@ namespace NavAppDesktopRegistration
             //SqlParameter prmName = 
             cmd.Parameters.AddWithValue("@EmployeeName", employeeName);
             cmd.Parameters.AddWithValue("@NationalID", nationalID);
-            cmd.Parameters.AddWithValue("@RankID", rank);
+            cmd.Parameters.AddWithValue("@RankID", r);
             cmd.Parameters.AddWithValue("@DepartmentID", dept);
-            cmd.Parameters.AddWithValue("@DepartmentID", branch);
+            cmd.Parameters.AddWithValue("@BranchID", branch);
             cmd.Parameters.AddWithValue("@IssuedCardID", issuedcardID);
             cmd.Parameters.AddWithValue("@DateOfBirth", dob);
             cmd.Parameters.AddWithValue("@Height", height);
