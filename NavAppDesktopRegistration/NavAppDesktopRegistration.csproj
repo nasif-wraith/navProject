@@ -75,6 +75,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper\HelperEnums.cs" />
     <Compile Include="Helper\MenuMakeHelper.cs" />
     <Compile Include="Model\EmployeeModel.cs" />
     <Compile Include="Model\UserModel.cs" />

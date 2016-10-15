@@ -30,81 +30,82 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeRegistrationView));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.close_employee_register_btn = new System.Windows.Forms.Button();
+            this.reset_btn = new System.Windows.Forms.Button();
+            this.submit_btn = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.chip_box = new System.Windows.Forms.TextBox();
+            this.RFID_box = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.finger_btn = new System.Windows.Forms.Button();
+            this.picture_btn = new System.Windows.Forms.Button();
+            this.signature_btn = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.finger_pictureBox = new System.Windows.Forms.PictureBox();
+            this.picture_pictureBox = new System.Windows.Forms.PictureBox();
+            this.signature_pictureBox = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.f_memberPS_box = new System.Windows.Forms.TextBox();
+            this.f_memberContact_box = new System.Windows.Forms.TextBox();
+            this.f_memberNID_box = new System.Windows.Forms.TextBox();
+            this.f_memberName_box = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.PersonalgroupBox = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.EmployeesCatagory_box = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.pscontact_box = new System.Windows.Forms.TextBox();
+            this.policeStation_box = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.contact_box = new System.Windows.Forms.TextBox();
+            this.identificationMark_box = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.permanentAddress_box = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.bloodGrpCombo = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.height = new System.Windows.Forms.TextBox();
+            this.height_box = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.email_box = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.branch_combo = new System.Windows.Forms.ComboBox();
+            this.dept_combo = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.rankCombo = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.maritalStatus_combo = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.doj_datetimepicker = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dob_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.presentAddress_box = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.nationalId_box = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.text_name = new System.Windows.Forms.TextBox();
+            this.signature_box = new System.Windows.Forms.TextBox();
+            this.picture_box = new System.Windows.Forms.TextBox();
+            this.fingerprint_box = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finger_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signature_pictureBox)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.PersonalgroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -115,9 +116,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.close_employee_register_btn);
+            this.groupBox1.Controls.Add(this.reset_btn);
+            this.groupBox1.Controls.Add(this.submit_btn);
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.PersonalgroupBox);
@@ -130,67 +131,72 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "  Employee Registration  ";
             // 
-            // button3
+            // close_employee_register_btn
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(829, 636);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(134, 33);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = false;
+            this.close_employee_register_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.close_employee_register_btn.BackColor = System.Drawing.Color.Silver;
+            this.close_employee_register_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.close_employee_register_btn.ForeColor = System.Drawing.Color.Black;
+            this.close_employee_register_btn.Location = new System.Drawing.Point(829, 636);
+            this.close_employee_register_btn.Name = "close_employee_register_btn";
+            this.close_employee_register_btn.Size = new System.Drawing.Size(134, 33);
+            this.close_employee_register_btn.TabIndex = 5;
+            this.close_employee_register_btn.Text = "Close";
+            this.close_employee_register_btn.UseVisualStyleBackColor = false;
+            this.close_employee_register_btn.Click += new System.EventHandler(this.close_employee_register_btn_Click);
             // 
-            // button2
+            // reset_btn
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(969, 636);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 33);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = false;
+            this.reset_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.reset_btn.BackColor = System.Drawing.Color.Silver;
+            this.reset_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.reset_btn.ForeColor = System.Drawing.Color.Black;
+            this.reset_btn.Location = new System.Drawing.Point(969, 636);
+            this.reset_btn.Name = "reset_btn";
+            this.reset_btn.Size = new System.Drawing.Size(134, 33);
+            this.reset_btn.TabIndex = 4;
+            this.reset_btn.Text = "Reset";
+            this.reset_btn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // submit_btn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(1110, 636);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 33);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.submit_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.submit_btn.BackColor = System.Drawing.Color.Silver;
+            this.submit_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.submit_btn.ForeColor = System.Drawing.Color.Black;
+            this.submit_btn.Location = new System.Drawing.Point(1110, 636);
+            this.submit_btn.Name = "submit_btn";
+            this.submit_btn.Size = new System.Drawing.Size(134, 33);
+            this.submit_btn.TabIndex = 0;
+            this.submit_btn.Text = "Submit";
+            this.submit_btn.UseVisualStyleBackColor = false;
+            this.submit_btn.Click += new System.EventHandler(this.submit_btn_Click);
             // 
             // groupBox5
             // 
             this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox5.Controls.Add(this.fingerprint_box);
+            this.groupBox5.Controls.Add(this.picture_box);
+            this.groupBox5.Controls.Add(this.signature_box);
             this.groupBox5.Controls.Add(this.button8);
             this.groupBox5.Controls.Add(this.button11);
             this.groupBox5.Controls.Add(this.button10);
             this.groupBox5.Controls.Add(this.button9);
             this.groupBox5.Controls.Add(this.button7);
-            this.groupBox5.Controls.Add(this.textBox15);
-            this.groupBox5.Controls.Add(this.textBox14);
+            this.groupBox5.Controls.Add(this.chip_box);
+            this.groupBox5.Controls.Add(this.RFID_box);
             this.groupBox5.Controls.Add(this.label28);
             this.groupBox5.Controls.Add(this.label27);
-            this.groupBox5.Controls.Add(this.button6);
-            this.groupBox5.Controls.Add(this.button5);
-            this.groupBox5.Controls.Add(this.button4);
+            this.groupBox5.Controls.Add(this.finger_btn);
+            this.groupBox5.Controls.Add(this.picture_btn);
+            this.groupBox5.Controls.Add(this.signature_btn);
             this.groupBox5.Controls.Add(this.label26);
             this.groupBox5.Controls.Add(this.label25);
             this.groupBox5.Controls.Add(this.label24);
-            this.groupBox5.Controls.Add(this.pictureBox3);
-            this.groupBox5.Controls.Add(this.pictureBox2);
-            this.groupBox5.Controls.Add(this.pictureBox1);
+            this.groupBox5.Controls.Add(this.finger_pictureBox);
+            this.groupBox5.Controls.Add(this.picture_pictureBox);
+            this.groupBox5.Controls.Add(this.signature_pictureBox);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.groupBox5.ForeColor = System.Drawing.Color.White;
             this.groupBox5.Location = new System.Drawing.Point(618, 230);
@@ -200,25 +206,90 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "  Extra Information";
             // 
-            // textBox15
+            // button8
             // 
-            this.textBox15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.BackColor = System.Drawing.Color.Silver;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button8.ForeColor = System.Drawing.Color.Black;
+            this.button8.Location = new System.Drawing.Point(455, 283);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(84, 23);
+            this.button8.TabIndex = 5;
+            this.button8.Text = "Write";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button11.BackColor = System.Drawing.Color.Silver;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button11.ForeColor = System.Drawing.Color.Black;
+            this.button11.Location = new System.Drawing.Point(526, 320);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(84, 23);
+            this.button11.TabIndex = 5;
+            this.button11.Text = "Write";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button10.BackColor = System.Drawing.Color.Silver;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button10.ForeColor = System.Drawing.Color.Black;
+            this.button10.Location = new System.Drawing.Point(436, 320);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(84, 23);
+            this.button10.TabIndex = 5;
+            this.button10.Text = "Erase";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button9.BackColor = System.Drawing.Color.Silver;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button9.ForeColor = System.Drawing.Color.Black;
+            this.button9.Location = new System.Drawing.Point(340, 320);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(84, 23);
+            this.button9.TabIndex = 5;
+            this.button9.Text = "Read";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.BackColor = System.Drawing.Color.Silver;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.Location = new System.Drawing.Point(340, 283);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(84, 23);
+            this.button7.TabIndex = 5;
+            this.button7.Text = "Check";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // chip_box
+            // 
+            this.chip_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox15.Location = new System.Drawing.Point(138, 320);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(178, 23);
-            this.textBox15.TabIndex = 36;
+            this.chip_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.chip_box.Location = new System.Drawing.Point(138, 320);
+            this.chip_box.Name = "chip_box";
+            this.chip_box.Size = new System.Drawing.Size(178, 23);
+            this.chip_box.TabIndex = 36;
             // 
-            // textBox14
+            // RFID_box
             // 
-            this.textBox14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.RFID_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox14.Location = new System.Drawing.Point(138, 283);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(178, 23);
-            this.textBox14.TabIndex = 36;
+            this.RFID_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.RFID_box.Location = new System.Drawing.Point(138, 283);
+            this.RFID_box.Name = "RFID_box";
+            this.RFID_box.Size = new System.Drawing.Size(178, 23);
+            this.RFID_box.TabIndex = 36;
             // 
             // label28
             // 
@@ -238,49 +309,52 @@
             this.label27.TabIndex = 34;
             this.label27.Text = "RFID Card ID : ";
             // 
-            // button6
+            // finger_btn
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.BackColor = System.Drawing.Color.Silver;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(436, 220);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(160, 26);
-            this.button6.TabIndex = 29;
-            this.button6.Text = "Take FirngerPrint";
-            this.button6.UseVisualStyleBackColor = false;
+            this.finger_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.finger_btn.BackColor = System.Drawing.Color.Silver;
+            this.finger_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.finger_btn.ForeColor = System.Drawing.Color.Black;
+            this.finger_btn.Location = new System.Drawing.Point(436, 211);
+            this.finger_btn.Name = "finger_btn";
+            this.finger_btn.Size = new System.Drawing.Size(160, 26);
+            this.finger_btn.TabIndex = 29;
+            this.finger_btn.Text = "Take FirngerPrint";
+            this.finger_btn.UseVisualStyleBackColor = false;
+            this.finger_btn.Click += new System.EventHandler(this.finger_btn_Click);
             // 
-            // button5
+            // picture_btn
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.BackColor = System.Drawing.Color.Silver;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(227, 220);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(160, 26);
-            this.button5.TabIndex = 29;
-            this.button5.Text = "Take Picture";
-            this.button5.UseVisualStyleBackColor = false;
+            this.picture_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.picture_btn.BackColor = System.Drawing.Color.Silver;
+            this.picture_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.picture_btn.ForeColor = System.Drawing.Color.Black;
+            this.picture_btn.Location = new System.Drawing.Point(227, 211);
+            this.picture_btn.Name = "picture_btn";
+            this.picture_btn.Size = new System.Drawing.Size(160, 26);
+            this.picture_btn.TabIndex = 29;
+            this.picture_btn.Text = "Take Picture";
+            this.picture_btn.UseVisualStyleBackColor = false;
+            this.picture_btn.Click += new System.EventHandler(this.picture_btn_Click);
             // 
-            // button4
+            // signature_btn
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.Silver;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(18, 220);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(160, 26);
-            this.button4.TabIndex = 29;
-            this.button4.Text = "Take Signature ";
-            this.button4.UseVisualStyleBackColor = false;
+            this.signature_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.signature_btn.BackColor = System.Drawing.Color.Silver;
+            this.signature_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.signature_btn.ForeColor = System.Drawing.Color.Black;
+            this.signature_btn.Location = new System.Drawing.Point(18, 211);
+            this.signature_btn.Name = "signature_btn";
+            this.signature_btn.Size = new System.Drawing.Size(160, 26);
+            this.signature_btn.TabIndex = 29;
+            this.signature_btn.Text = "Take Signature ";
+            this.signature_btn.UseVisualStyleBackColor = false;
+            this.signature_btn.Click += new System.EventHandler(this.signature_btn_Click);
             // 
             // label26
             // 
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(439, 37);
+            this.label26.Location = new System.Drawing.Point(439, 28);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(100, 20);
             this.label26.TabIndex = 26;
@@ -289,7 +363,7 @@
             // label25
             // 
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(230, 37);
+            this.label25.Location = new System.Drawing.Point(230, 28);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(100, 20);
             this.label25.TabIndex = 26;
@@ -298,53 +372,53 @@
             // label24
             // 
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(21, 37);
+            this.label24.Location = new System.Drawing.Point(21, 28);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(100, 20);
             this.label24.TabIndex = 26;
             this.label24.Text = "Signature : ";
             // 
-            // pictureBox3
+            // finger_pictureBox
             // 
-            this.pictureBox3.Image = global::NavAppDesktopRegistration.Properties.Resources.propic;
-            this.pictureBox3.InitialImage = global::NavAppDesktopRegistration.Properties.Resources.propic;
-            this.pictureBox3.Location = new System.Drawing.Point(436, 59);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(160, 151);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.finger_pictureBox.Image = global::NavAppDesktopRegistration.Properties.Resources.propic;
+            this.finger_pictureBox.InitialImage = global::NavAppDesktopRegistration.Properties.Resources.propic;
+            this.finger_pictureBox.Location = new System.Drawing.Point(436, 50);
+            this.finger_pictureBox.Name = "finger_pictureBox";
+            this.finger_pictureBox.Size = new System.Drawing.Size(160, 151);
+            this.finger_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.finger_pictureBox.TabIndex = 0;
+            this.finger_pictureBox.TabStop = false;
             // 
-            // pictureBox2
+            // picture_pictureBox
             // 
-            this.pictureBox2.Image = global::NavAppDesktopRegistration.Properties.Resources.propic;
-            this.pictureBox2.InitialImage = global::NavAppDesktopRegistration.Properties.Resources.propic;
-            this.pictureBox2.Location = new System.Drawing.Point(227, 59);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(160, 151);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.picture_pictureBox.Image = global::NavAppDesktopRegistration.Properties.Resources.propic;
+            this.picture_pictureBox.InitialImage = global::NavAppDesktopRegistration.Properties.Resources.propic;
+            this.picture_pictureBox.Location = new System.Drawing.Point(227, 50);
+            this.picture_pictureBox.Name = "picture_pictureBox";
+            this.picture_pictureBox.Size = new System.Drawing.Size(160, 151);
+            this.picture_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture_pictureBox.TabIndex = 0;
+            this.picture_pictureBox.TabStop = false;
             // 
-            // pictureBox1
+            // signature_pictureBox
             // 
-            this.pictureBox1.Image = global::NavAppDesktopRegistration.Properties.Resources.propic;
-            this.pictureBox1.InitialImage = global::NavAppDesktopRegistration.Properties.Resources.propic;
-            this.pictureBox1.Location = new System.Drawing.Point(18, 59);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 151);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.signature_pictureBox.Image = global::NavAppDesktopRegistration.Properties.Resources.propic;
+            this.signature_pictureBox.InitialImage = global::NavAppDesktopRegistration.Properties.Resources.propic;
+            this.signature_pictureBox.Location = new System.Drawing.Point(18, 50);
+            this.signature_pictureBox.Name = "signature_pictureBox";
+            this.signature_pictureBox.Size = new System.Drawing.Size(160, 151);
+            this.signature_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.signature_pictureBox.TabIndex = 0;
+            this.signature_pictureBox.TabStop = false;
             // 
             // groupBox3
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.textBox13);
-            this.groupBox3.Controls.Add(this.textBox12);
-            this.groupBox3.Controls.Add(this.textBox11);
-            this.groupBox3.Controls.Add(this.textBox10);
+            this.groupBox3.Controls.Add(this.f_memberPS_box);
+            this.groupBox3.Controls.Add(this.f_memberContact_box);
+            this.groupBox3.Controls.Add(this.f_memberNID_box);
+            this.groupBox3.Controls.Add(this.f_memberName_box);
             this.groupBox3.Controls.Add(this.label23);
             this.groupBox3.Controls.Add(this.label22);
             this.groupBox3.Controls.Add(this.label21);
@@ -358,45 +432,45 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Family Infomation";
             // 
-            // textBox13
+            // f_memberPS_box
             // 
-            this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.f_memberPS_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox13.Location = new System.Drawing.Point(184, 138);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(413, 23);
-            this.textBox13.TabIndex = 29;
+            this.f_memberPS_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.f_memberPS_box.Location = new System.Drawing.Point(184, 138);
+            this.f_memberPS_box.Name = "f_memberPS_box";
+            this.f_memberPS_box.Size = new System.Drawing.Size(413, 23);
+            this.f_memberPS_box.TabIndex = 29;
             // 
-            // textBox12
+            // f_memberContact_box
             // 
-            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.f_memberContact_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox12.Location = new System.Drawing.Point(184, 102);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(413, 23);
-            this.textBox12.TabIndex = 28;
+            this.f_memberContact_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.f_memberContact_box.Location = new System.Drawing.Point(184, 102);
+            this.f_memberContact_box.Name = "f_memberContact_box";
+            this.f_memberContact_box.Size = new System.Drawing.Size(413, 23);
+            this.f_memberContact_box.TabIndex = 28;
             // 
-            // textBox11
+            // f_memberNID_box
             // 
-            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.f_memberNID_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox11.Location = new System.Drawing.Point(184, 68);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(413, 23);
-            this.textBox11.TabIndex = 27;
+            this.f_memberNID_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.f_memberNID_box.Location = new System.Drawing.Point(184, 68);
+            this.f_memberNID_box.Name = "f_memberNID_box";
+            this.f_memberNID_box.Size = new System.Drawing.Size(413, 23);
+            this.f_memberNID_box.TabIndex = 27;
             // 
-            // textBox10
+            // f_memberName_box
             // 
-            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.f_memberName_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox10.Location = new System.Drawing.Point(184, 37);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(413, 23);
-            this.textBox10.TabIndex = 26;
+            this.f_memberName_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.f_memberName_box.Location = new System.Drawing.Point(184, 37);
+            this.f_memberName_box.Name = "f_memberName_box";
+            this.f_memberName_box.Size = new System.Drawing.Size(413, 23);
+            this.f_memberName_box.TabIndex = 26;
             // 
             // label23
             // 
@@ -452,44 +526,42 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PersonalgroupBox.BackColor = System.Drawing.Color.Transparent;
-            this.PersonalgroupBox.Controls.Add(this.comboBox1);
+            this.PersonalgroupBox.Controls.Add(this.EmployeesCatagory_box);
             this.PersonalgroupBox.Controls.Add(this.label19);
-            this.PersonalgroupBox.Controls.Add(this.textBox9);
-            this.PersonalgroupBox.Controls.Add(this.textBox8);
+            this.PersonalgroupBox.Controls.Add(this.pscontact_box);
+            this.PersonalgroupBox.Controls.Add(this.policeStation_box);
             this.PersonalgroupBox.Controls.Add(this.label18);
             this.PersonalgroupBox.Controls.Add(this.label17);
-            this.PersonalgroupBox.Controls.Add(this.textBox7);
-            this.PersonalgroupBox.Controls.Add(this.label16);
-            this.PersonalgroupBox.Controls.Add(this.textBox6);
-            this.PersonalgroupBox.Controls.Add(this.textBox4);
+            this.PersonalgroupBox.Controls.Add(this.contact_box);
+            this.PersonalgroupBox.Controls.Add(this.identificationMark_box);
             this.PersonalgroupBox.Controls.Add(this.label15);
-            this.PersonalgroupBox.Controls.Add(this.textBox2);
+            this.PersonalgroupBox.Controls.Add(this.permanentAddress_box);
             this.PersonalgroupBox.Controls.Add(this.label14);
             this.PersonalgroupBox.Controls.Add(this.bloodGrpCombo);
             this.PersonalgroupBox.Controls.Add(this.label13);
-            this.PersonalgroupBox.Controls.Add(this.height);
+            this.PersonalgroupBox.Controls.Add(this.height_box);
             this.PersonalgroupBox.Controls.Add(this.label4);
-            this.PersonalgroupBox.Controls.Add(this.emailTextBox);
+            this.PersonalgroupBox.Controls.Add(this.email_box);
             this.PersonalgroupBox.Controls.Add(this.label12);
-            this.PersonalgroupBox.Controls.Add(this.comboBox4);
-            this.PersonalgroupBox.Controls.Add(this.comboBox3);
+            this.PersonalgroupBox.Controls.Add(this.branch_combo);
+            this.PersonalgroupBox.Controls.Add(this.dept_combo);
             this.PersonalgroupBox.Controls.Add(this.label11);
             this.PersonalgroupBox.Controls.Add(this.label10);
             this.PersonalgroupBox.Controls.Add(this.rankCombo);
             this.PersonalgroupBox.Controls.Add(this.label9);
             this.PersonalgroupBox.Controls.Add(this.label7);
-            this.PersonalgroupBox.Controls.Add(this.comboBox2);
+            this.PersonalgroupBox.Controls.Add(this.maritalStatus_combo);
             this.PersonalgroupBox.Controls.Add(this.label8);
-            this.PersonalgroupBox.Controls.Add(this.dateTimePicker2);
+            this.PersonalgroupBox.Controls.Add(this.doj_datetimepicker);
             this.PersonalgroupBox.Controls.Add(this.label6);
-            this.PersonalgroupBox.Controls.Add(this.dateTimePicker1);
+            this.PersonalgroupBox.Controls.Add(this.dob_dateTimePicker);
             this.PersonalgroupBox.Controls.Add(this.label5);
-            this.PersonalgroupBox.Controls.Add(this.textBox5);
+            this.PersonalgroupBox.Controls.Add(this.presentAddress_box);
             this.PersonalgroupBox.Controls.Add(this.label3);
-            this.PersonalgroupBox.Controls.Add(this.textBox3);
+            this.PersonalgroupBox.Controls.Add(this.nationalId_box);
             this.PersonalgroupBox.Controls.Add(this.label2);
             this.PersonalgroupBox.Controls.Add(this.label1);
-            this.PersonalgroupBox.Controls.Add(this.textBox1);
+            this.PersonalgroupBox.Controls.Add(this.text_name);
             this.PersonalgroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.PersonalgroupBox.ForeColor = System.Drawing.Color.White;
             this.PersonalgroupBox.Location = new System.Drawing.Point(11, 34);
@@ -499,15 +571,15 @@
             this.PersonalgroupBox.TabStop = false;
             this.PersonalgroupBox.Text = "  Personal Infomation";
             // 
-            // comboBox1
+            // EmployeesCatagory_box
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.EmployeesCatagory_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(400, 422);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(185, 24);
-            this.comboBox1.TabIndex = 42;
+            this.EmployeesCatagory_box.FormattingEnabled = true;
+            this.EmployeesCatagory_box.Location = new System.Drawing.Point(400, 422);
+            this.EmployeesCatagory_box.Name = "EmployeesCatagory_box";
+            this.EmployeesCatagory_box.Size = new System.Drawing.Size(185, 24);
+            this.EmployeesCatagory_box.TabIndex = 42;
             // 
             // label19
             // 
@@ -519,25 +591,25 @@
             this.label19.Text = "Employee Catagory :";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox9
+            // pscontact_box
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pscontact_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox9.Location = new System.Drawing.Point(400, 562);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(183, 23);
-            this.textBox9.TabIndex = 40;
+            this.pscontact_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.pscontact_box.Location = new System.Drawing.Point(400, 562);
+            this.pscontact_box.Name = "pscontact_box";
+            this.pscontact_box.Size = new System.Drawing.Size(183, 23);
+            this.pscontact_box.TabIndex = 40;
             // 
-            // textBox8
+            // policeStation_box
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.policeStation_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox8.Location = new System.Drawing.Point(110, 567);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(183, 23);
-            this.textBox8.TabIndex = 39;
+            this.policeStation_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.policeStation_box.Location = new System.Drawing.Point(110, 567);
+            this.policeStation_box.Name = "policeStation_box";
+            this.policeStation_box.Size = new System.Drawing.Size(183, 23);
+            this.policeStation_box.TabIndex = 39;
             // 
             // label18
             // 
@@ -561,44 +633,24 @@
             this.label17.Text = "Police Station :";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox7
+            // contact_box
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.contact_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox7.Location = new System.Drawing.Point(110, 517);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(183, 23);
-            this.textBox7.TabIndex = 36;
+            this.contact_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.contact_box.Location = new System.Drawing.Point(110, 422);
+            this.contact_box.Name = "contact_box";
+            this.contact_box.Size = new System.Drawing.Size(183, 23);
+            this.contact_box.TabIndex = 34;
             // 
-            // label16
+            // identificationMark_box
             // 
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(12, 517);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(71, 20);
-            this.label16.TabIndex = 35;
-            this.label16.Text = "Contact :";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox6.Location = new System.Drawing.Point(110, 422);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(183, 23);
-            this.textBox6.TabIndex = 34;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox4.Location = new System.Drawing.Point(110, 362);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(183, 35);
-            this.textBox4.TabIndex = 33;
+            this.identificationMark_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.identificationMark_box.Location = new System.Drawing.Point(110, 362);
+            this.identificationMark_box.Multiline = true;
+            this.identificationMark_box.Name = "identificationMark_box";
+            this.identificationMark_box.Size = new System.Drawing.Size(183, 35);
+            this.identificationMark_box.TabIndex = 33;
             // 
             // label15
             // 
@@ -612,16 +664,16 @@
             this.label15.Text = "Identification Mark :";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox2
+            // permanentAddress_box
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.permanentAddress_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox2.Location = new System.Drawing.Point(110, 301);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(473, 46);
-            this.textBox2.TabIndex = 31;
+            this.permanentAddress_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.permanentAddress_box.Location = new System.Drawing.Point(110, 301);
+            this.permanentAddress_box.Multiline = true;
+            this.permanentAddress_box.Name = "permanentAddress_box";
+            this.permanentAddress_box.Size = new System.Drawing.Size(473, 46);
+            this.permanentAddress_box.TabIndex = 31;
             // 
             // label14
             // 
@@ -653,15 +705,15 @@
             this.label13.Text = "Blood Group :";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // height
+            // height_box
             // 
-            this.height.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.height_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.height.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.height.Location = new System.Drawing.Point(110, 193);
-            this.height.Name = "height";
-            this.height.Size = new System.Drawing.Size(103, 23);
-            this.height.TabIndex = 27;
+            this.height_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.height_box.Location = new System.Drawing.Point(110, 193);
+            this.height_box.Name = "height_box";
+            this.height_box.Size = new System.Drawing.Size(103, 23);
+            this.height_box.TabIndex = 27;
             // 
             // label4
             // 
@@ -673,15 +725,15 @@
             this.label4.Text = "Height :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // emailTextBox
+            // email_box
             // 
-            this.emailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.email_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.emailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.emailTextBox.Location = new System.Drawing.Point(398, 118);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(185, 23);
-            this.emailTextBox.TabIndex = 25;
+            this.email_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.email_box.Location = new System.Drawing.Point(398, 118);
+            this.email_box.Name = "email_box";
+            this.email_box.Size = new System.Drawing.Size(185, 23);
+            this.email_box.TabIndex = 25;
             // 
             // label12
             // 
@@ -693,21 +745,21 @@
             this.label12.Text = "Email :";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBox4
+            // branch_combo
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(488, 80);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(95, 24);
-            this.comboBox4.TabIndex = 23;
+            this.branch_combo.FormattingEnabled = true;
+            this.branch_combo.Location = new System.Drawing.Point(488, 80);
+            this.branch_combo.Name = "branch_combo";
+            this.branch_combo.Size = new System.Drawing.Size(95, 24);
+            this.branch_combo.TabIndex = 23;
             // 
-            // comboBox3
+            // dept_combo
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(288, 80);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(95, 24);
-            this.comboBox3.TabIndex = 22;
+            this.dept_combo.FormattingEnabled = true;
+            this.dept_combo.Location = new System.Drawing.Point(288, 80);
+            this.dept_combo.Name = "dept_combo";
+            this.dept_combo.Size = new System.Drawing.Size(95, 24);
+            this.dept_combo.TabIndex = 22;
             // 
             // label11
             // 
@@ -732,6 +784,21 @@
             // rankCombo
             // 
             this.rankCombo.FormattingEnabled = true;
+            this.rankCombo.Items.AddRange(new object[] {
+            "leading seaman",
+            "petty office",
+            "chief petty officer",
+            "master chief petty officer",
+            "mid ship man",
+            "sub lieutenant",
+            "lieutenant",
+            "lieutenant commander",
+            "captain",
+            "comodor",
+            "real admiral,",
+            "vice admiral",
+            "admiral",
+            "admiral of the fleet"});
             this.rankCombo.Location = new System.Drawing.Point(110, 80);
             this.rankCombo.Name = "rankCombo";
             this.rankCombo.Size = new System.Drawing.Size(95, 24);
@@ -759,15 +826,18 @@
             this.label7.Text = "Date of Joining :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox2
+            // maritalStatus_combo
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.maritalStatus_combo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(398, 368);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(185, 24);
-            this.comboBox2.TabIndex = 16;
+            this.maritalStatus_combo.FormattingEnabled = true;
+            this.maritalStatus_combo.Items.AddRange(new object[] {
+            "Married",
+            "Unmarriede"});
+            this.maritalStatus_combo.Location = new System.Drawing.Point(398, 368);
+            this.maritalStatus_combo.Name = "maritalStatus_combo";
+            this.maritalStatus_combo.Size = new System.Drawing.Size(185, 24);
+            this.maritalStatus_combo.TabIndex = 16;
             // 
             // label8
             // 
@@ -779,14 +849,14 @@
             this.label8.Text = "Contact :";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // dateTimePicker2
+            // doj_datetimepicker
             // 
-            this.dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.doj_datetimepicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(110, 469);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(272, 23);
-            this.dateTimePicker2.TabIndex = 12;
+            this.doj_datetimepicker.Location = new System.Drawing.Point(110, 469);
+            this.doj_datetimepicker.Name = "doj_datetimepicker";
+            this.doj_datetimepicker.Size = new System.Drawing.Size(272, 23);
+            this.doj_datetimepicker.TabIndex = 12;
             // 
             // label6
             // 
@@ -798,14 +868,14 @@
             this.label6.Text = "DOB :";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // dateTimePicker1
+            // dob_dateTimePicker
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dob_dateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(110, 153);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(272, 23);
-            this.dateTimePicker1.TabIndex = 10;
+            this.dob_dateTimePicker.Location = new System.Drawing.Point(110, 153);
+            this.dob_dateTimePicker.Name = "dob_dateTimePicker";
+            this.dob_dateTimePicker.Size = new System.Drawing.Size(272, 23);
+            this.dob_dateTimePicker.TabIndex = 10;
             // 
             // label5
             // 
@@ -817,16 +887,16 @@
             this.label5.Text = "Present Address :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox5
+            // presentAddress_box
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.presentAddress_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox5.Location = new System.Drawing.Point(110, 240);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(473, 46);
-            this.textBox5.TabIndex = 8;
+            this.presentAddress_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.presentAddress_box.Location = new System.Drawing.Point(110, 240);
+            this.presentAddress_box.Multiline = true;
+            this.presentAddress_box.Name = "presentAddress_box";
+            this.presentAddress_box.Size = new System.Drawing.Size(473, 46);
+            this.presentAddress_box.TabIndex = 8;
             // 
             // label3
             // 
@@ -838,13 +908,13 @@
             this.label3.Text = "National ID :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox3
+            // nationalId_box
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox3.Location = new System.Drawing.Point(110, 121);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(170, 23);
-            this.textBox3.TabIndex = 4;
+            this.nationalId_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.nationalId_box.Location = new System.Drawing.Point(110, 121);
+            this.nationalId_box.Name = "nationalId_box";
+            this.nationalId_box.Size = new System.Drawing.Size(170, 23);
+            this.nationalId_box.TabIndex = 4;
             // 
             // label2
             // 
@@ -866,80 +936,36 @@
             this.label1.Text = "Name :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // text_name
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.text_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox1.Location = new System.Drawing.Point(110, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(473, 23);
-            this.textBox1.TabIndex = 0;
+            this.text_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.text_name.Location = new System.Drawing.Point(110, 37);
+            this.text_name.Name = "text_name";
+            this.text_name.Size = new System.Drawing.Size(473, 23);
+            this.text_name.TabIndex = 0;
             // 
-            // button7
+            // signature_box
             // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.BackColor = System.Drawing.Color.Silver;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(340, 283);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(84, 23);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "Check";
-            this.button7.UseVisualStyleBackColor = false;
+            this.signature_box.Location = new System.Drawing.Point(18, 243);
+            this.signature_box.Name = "signature_box";
+            this.signature_box.Size = new System.Drawing.Size(160, 23);
+            this.signature_box.TabIndex = 37;
             // 
-            // button8
+            // picture_box
             // 
-            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.BackColor = System.Drawing.Color.Silver;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button8.ForeColor = System.Drawing.Color.Black;
-            this.button8.Location = new System.Drawing.Point(455, 283);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(84, 23);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "Write";
-            this.button8.UseVisualStyleBackColor = false;
+            this.picture_box.Location = new System.Drawing.Point(227, 243);
+            this.picture_box.Name = "picture_box";
+            this.picture_box.Size = new System.Drawing.Size(160, 23);
+            this.picture_box.TabIndex = 37;
             // 
-            // button9
+            // fingerprint_box
             // 
-            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button9.BackColor = System.Drawing.Color.Silver;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(340, 320);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(84, 23);
-            this.button9.TabIndex = 5;
-            this.button9.Text = "Read";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.BackColor = System.Drawing.Color.Silver;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Location = new System.Drawing.Point(436, 320);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(84, 23);
-            this.button10.TabIndex = 5;
-            this.button10.Text = "Erase";
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button11.BackColor = System.Drawing.Color.Silver;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Location = new System.Drawing.Point(526, 320);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(84, 23);
-            this.button11.TabIndex = 5;
-            this.button11.Text = "Write";
-            this.button11.UseVisualStyleBackColor = false;
+            this.fingerprint_box.Location = new System.Drawing.Point(436, 243);
+            this.fingerprint_box.Name = "fingerprint_box";
+            this.fingerprint_box.Size = new System.Drawing.Size(160, 23);
+            this.fingerprint_box.TabIndex = 37;
             // 
             // EmployeeRegistrationView
             // 
@@ -957,9 +983,9 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finger_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signature_pictureBox)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.PersonalgroupBox.ResumeLayout(false);
@@ -974,73 +1000,74 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox PersonalgroupBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox text_name;
+        private System.Windows.Forms.ComboBox maritalStatus_combo;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker doj_datetimepicker;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dob_dateTimePicker;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox presentAddress_box;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox nationalId_box;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Button reset_btn;
+        private System.Windows.Forms.Button submit_btn;
+        private System.Windows.Forms.Button close_employee_register_btn;
+        private System.Windows.Forms.ComboBox branch_combo;
+        private System.Windows.Forms.ComboBox dept_combo;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox rankCombo;
-        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.TextBox email_box;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox height;
+        private System.Windows.Forms.TextBox height_box;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox bloodGrpCombo;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox identificationMark_box;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox permanentAddress_box;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox contact_box;
+        private System.Windows.Forms.TextBox pscontact_box;
+        private System.Windows.Forms.TextBox policeStation_box;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox EmployeesCatagory_box;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox f_memberPS_box;
+        private System.Windows.Forms.TextBox f_memberContact_box;
+        private System.Windows.Forms.TextBox f_memberNID_box;
+        private System.Windows.Forms.TextBox f_memberName_box;
+        private System.Windows.Forms.Button signature_btn;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox signature_pictureBox;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox chip_box;
+        private System.Windows.Forms.TextBox RFID_box;
+        private System.Windows.Forms.Button finger_btn;
+        private System.Windows.Forms.Button picture_btn;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox finger_pictureBox;
+        private System.Windows.Forms.PictureBox picture_pictureBox;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.TextBox fingerprint_box;
+        private System.Windows.Forms.TextBox picture_box;
+        private System.Windows.Forms.TextBox signature_box;
 
     }
 }

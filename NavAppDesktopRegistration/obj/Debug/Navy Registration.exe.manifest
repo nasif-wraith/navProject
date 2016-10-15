@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Navy Registration.exe" size="1720832">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Navy Registration.exe" size="1728000">
       <assemblyIdentity name="Navy Registration" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rSL3MGFGnLMNiDN/hVtuRXn5AH9dU1Rtd8V8JW+1Ulo=</dsig:DigestValue>
+        <dsig:DigestValue>VnZ0vTjCjS/EmjpIkwsGVwIIUDrthECCocEx+WHg3ks=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

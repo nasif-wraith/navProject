@@ -18,16 +18,16 @@ namespace NavAppDesktopRegistration
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            LoaderClose = false;
-            RegiClose = false;
-            Application.Run(new Loader());
-            if (LoaderClose)
-            {
-                Application.Run(new Login());
-            }
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            //LoaderClose = false;
+            //RegiClose = false;
             //Application.Run(new Loader());
+            //if (LoaderClose)
+            //{
+            //    Application.Run(new Login());
+            //}
+            Application.Run(new EmployeeRegistrationView());
         }
     }
 }
