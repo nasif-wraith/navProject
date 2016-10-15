@@ -34,3 +34,21 @@ E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\Na
 E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\Navy Registration.application
 E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Rank.resources
 E:\navy project\NavAppDesktopRegistration\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.UserAdd.resources
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe.config
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.exe
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.pdb
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.g.resources
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Properties.Resources.resources
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.EmployeeRegistrationView.resources
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Loader.resources
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Login.resources
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Rank.resources
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.RegistrationFormMain.resources
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.UserAdd.resources
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.csproj.GenerateResource.Cache
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe.manifest
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.application
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.pdb
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.exe.manifest
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.application

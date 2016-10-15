@@ -19,15 +19,17 @@ namespace NavAppDesktopRegistration
         private string signaturetext;
         private string picturetext;
         private string fingerprinttext;
+        private Form _previousForm;
 
         public EmployeeRegistrationView()
         {
             InitializeComponent();
         }
-        public EmployeeRegistrationView(UserModel currentUser)
+        public EmployeeRegistrationView(UserModel currentUser,Form prevForm)
         {
             InitializeComponent();
             _currentUser = currentUser;
+            _previousForm = prevForm;
             //loadAllCombo();
             //fireComboBox();
         }
@@ -109,12 +111,14 @@ namespace NavAppDesktopRegistration
            // string rank = rankCombo.SelectedText;
             string dept = dept_combo.SelectedText;
             string branch = branch_combo.SelectedText;
-            string dob = "'" + dob_dateTimePicker.Value.ToString("yyyy-MM-dd")+ "'";
+            DateTime dob = dob_dateTimePicker.Value;
+            //string dob = "'20161025'";
             //DateTime dob = dob_dateTimePicker.Value.Date
             string height = height_box.Text;
             string blood_Group = bloodGrpCombo.SelectedText;
             string identification = identificationMark_box.Text;
-            string doj = "'" + doj_datetimepicker.Value.ToString("yyyy-mm-dd") + "'";
+            DateTime doj = doj_datetimepicker.Value;
+            //string doj = "'20161025'"; 
             string employer_catagory = EmployeesCatagory_box.Text;
             string marital_status = maritalStatus_combo.SelectedText;
             string present_address = presentAddress_box.Text;
@@ -131,57 +135,45 @@ namespace NavAppDesktopRegistration
             int rfid = Int32.Parse(RFID_box.Text);
             string previousOfficeID = "0";
 
-            int r=0;
+            int r=1;
 
-            string rank = rankCombo.SelectedItem.ToString();
-            if(rank=="leading seaman")
-            {r=1;}
-            else if (rank=="petty office")
-            {r=2;}
-            else if (rank=="chief petty office")
-            {r=3;}
-            else if (rank=="master chief petty officer")
-            {r=4;}
-            else if (rank=="mid ship man")
-            {r=5;}
-            else if (rank=="sub lieutenant")
-            {r=6;}
-            else if (rank=="lieutenant")
-            {r=7;}
-            else if (rank=="lieutenant commander")
-            {r=8;}
-            else if (rank=="captain")
-            {r=9;}
-            else if (rank=="comodor")
-            {r=10;}
-            else if (rank=="rear admiral")
-            {r=11;}
-            else if (rank=="vice admiral")
-            {r=12;}
-            else if (rank=="admiral")
-            {r=13;}
-            else if(rank=="admiral of the fleet")
-            { r = 14;}
+            //string rank = rankCombo.SelectedItem.ToString();
+            //if(rank=="leading seaman")
+            //{r=1;}
+            //else if (rank=="petty office")
+            //{r=2;}
+            //else if (rank=="chief petty office")
+            //{r=3;}
+            //else if (rank=="master chief petty officer")
+            //{r=4;}
+            //else if (rank=="mid ship man")
+            //{r=5;}
+            //else if (rank=="sub lieutenant")
+            //{r=6;}
+            //else if (rank=="lieutenant")
+            //{r=7;}
+            //else if (rank=="lieutenant commander")
+            //{r=8;}
+            //else if (rank=="captain")
+            //{r=9;}
+            //else if (rank=="comodor")
+            //{r=10;}
+            //else if (rank=="rear admiral")
+            //{r=11;}
+            //else if (rank=="vice admiral")
+            //{r=12;}
+            //else if (rank=="admiral")
+            //{r=13;}
+            //else if(rank=="admiral of the fleet")
+            //{ r = 14;}
 
-            //FileStream fs = new FileStream(signature_box.Text, FileMode.Open, FileAccess.Read);
-            //byte[] signatureImage = new byte[fs.Length];
-            //fs.Read(signatureImage, 0, Convert.ToInt32(fs.Length));
-            //fs.Close();
-
-            //FileStream pc = new FileStream(picture_box.Text, FileMode.Open, FileAccess.Read);
-            //byte[] pictureImage = new byte[fs.Length];
-            //fs.Read(pictureImage, 0, Convert.ToInt32(fs.Length));
-            //pc.Close();
-
-            //FileStream fin = new FileStream(fingerprint_box.Text, FileMode.Open, FileAccess.Read);
-            //byte[] fingerprintImage = new byte[fs.Length];
-            //fs.Read(fingerprintImage, 0, Convert.ToInt32(fs.Length));
-            //fin.Close();
-
+            
             //dummy var
             int issuedcardID = 1;
 
-            string connectionString = @"Data Source=DESKTOP-AG0F2UT\NASIF;Initial Catalog=FInal_navy;Integrated Security=True";
+            DateTime datetime = DateTime.Now;
+            //string datetime = "'20161025'";
+            string connectionString = @"Data Source=DESKTOP-7FART4C\SQLEXPRESS;Initial Catalog=FInal_navy;Integrated Security=True";
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
             SqlCommand cmd = new SqlCommand("emp_register", con);
@@ -220,9 +212,9 @@ namespace NavAppDesktopRegistration
             cmd.Parameters.AddWithValue("@CardID",rfid);
             cmd.Parameters.AddWithValue("@PreviousOfficeIds", previousOfficeID);
             cmd.Parameters.AddWithValue("@CreatedBy", office_Id);
-            cmd.Parameters.AddWithValue("@CreatedDate", DateTime.Now.ToString("yyyy-mm-dd"));
+            cmd.Parameters.AddWithValue("@CreatedDate", datetime);
             cmd.Parameters.AddWithValue("@ModifiedBy", office_Id);
-            cmd.Parameters.AddWithValue("@ModifiedDate", DateTime.Now.ToString("yyyy-mm-dd"));
+            cmd.Parameters.AddWithValue("@ModifiedDate", datetime);
 
             SqlParameter prmID = new SqlParameter()
             {

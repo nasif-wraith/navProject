@@ -38,7 +38,7 @@ namespace NavAppDesktopRegistration
 
         public void initAllForm()
         {
-            _employeeRegistrationView = new EmployeeRegistrationView(_currentUser);
+            _employeeRegistrationView = new EmployeeRegistrationView(_currentUser, _previousForm);
             _userAdd = new UserAdd(_currentUser);
             _rank = new Rank(_currentUser);
         }
