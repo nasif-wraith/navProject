@@ -15,26 +15,53 @@ namespace NavAppDesktopRegistration
     
     public partial class EmployeeRegistrationView : Form
     {
+        
+        #region private fields
         private UserModel _currentUser;
         private string signaturetext;
         private string picturetext;
         private string fingerprinttext;
         private Form _previousForm;
+        #endregion
 
+        #region ctor
         public EmployeeRegistrationView()
         {
             InitializeComponent();
         }
-        public EmployeeRegistrationView(UserModel currentUser,Form prevForm)
+        public EmployeeRegistrationView(UserModel currentUser, Form prevForm)
         {
             InitializeComponent();
             _currentUser = currentUser;
             _previousForm = prevForm;
-            //loadAllCombo();
-            //fireComboBox();
+            loadAllCombo(rankCombo);
+            
         }
+        #endregion            
 
+        #region Private Meth
+        void loadAllCombo(ComboBox rankCombo)//ok tata :)
+        {
+            rankCombo.DataSource = Enum.GetValues(typeof(RanksEnum)).Cast<Enum>().Select(value => new
+            {
+                (Attribute.GetCustomAttribute(value.GetType().GetField(value.ToString()), typeof(DescriptionAttribute)) as DescriptionAttribute).Description,
+                value
+            }).OrderBy(item => item.value).ToList();
+            rankCombo.DisplayMember = "Description";
+            rankCombo.ValueMember = "value";
+
+        }
+        void formClose()
+        {
+            //this.Hide();
+            //_previousForm.Show();
+            this.Close();
+        }
        
+
+        #endregion
+
+        #region private events or callback
         private void signature_btn_Click(object sender, EventArgs e)
         {
             OpenFileDialog pic = new OpenFileDialog();
@@ -59,7 +86,7 @@ namespace NavAppDesktopRegistration
                 picture_pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 //textBox1.Text = pic.FileName;
                 picture_box.Text = pic.FileName;
-               // MessageBox.Show("path is " + picture_pictureBox.ImageLocation);
+                // MessageBox.Show("path is " + picture_pictureBox.ImageLocation);
             }
         }
 
@@ -77,34 +104,6 @@ namespace NavAppDesktopRegistration
             }
         }
 
-        #region Private Methods
-        void loadAllCombo(ComboBox rankCombo)
-        {
-            rankCombo.DataSource = Enum.GetValues(typeof(RanksEnum)).Cast<Enum>().Select(value => new
-            {
-                (Attribute.GetCustomAttribute(value.GetType().GetField(value.ToString()), typeof(DescriptionAttribute)) as DescriptionAttribute).Description,
-                value
-            }).OrderBy(item => item.value).ToList();
-            rankCombo.DisplayMember = "Description";
-            rankCombo.ValueMember = "value";
-
-        }
-        void formClose()
-        {
-            //this.Hide();
-            //_previousForm.Show();
-            this.Close();
-        }
-        void fireComboBox()
-        {
-            //foreach (var item in Enum.GetValues(typeof(ranks)))
-            //{
-            //    //cbRa.Items.Add(item);
-            //    rankCombo.Items.Add(item);
-            //}
-        } 
-
-        #endregion
         private void close_employee_register_btn_Click(object sender, EventArgs e)
         {
             formClose();
@@ -173,7 +172,7 @@ namespace NavAppDesktopRegistration
             //else if(rank=="admiral of the fleet")
             //{ r = 14;}
 
-            
+
             //dummy var
             int issuedcardID = 1;
 
@@ -204,18 +203,18 @@ namespace NavAppDesktopRegistration
             cmd.Parameters.AddWithValue("@DateOfRetirement", doj);
             cmd.Parameters.AddWithValue("@DateOfJoining", doj);
             cmd.Parameters.AddWithValue("@MaritalStatus", marital_status);
-            cmd.Parameters.AddWithValue("@PresentAddress",present_address);
+            cmd.Parameters.AddWithValue("@PresentAddress", present_address);
             cmd.Parameters.AddWithValue("@PermanentAddress", permanent_address);
             cmd.Parameters.AddWithValue("@EmailAddress", email);
             cmd.Parameters.AddWithValue("@ContactNumber", contact);
             cmd.Parameters.AddWithValue("@PoliceStation", police_station);
-            cmd.Parameters.AddWithValue("@PoliceStationContactNumber",police_stationContact);
+            cmd.Parameters.AddWithValue("@PoliceStationContactNumber", police_stationContact);
             cmd.Parameters.AddWithValue("@FamilyPersonName", family_person_name);
             cmd.Parameters.AddWithValue("@FamilyPersonNID", family_NID);
             cmd.Parameters.AddWithValue("@FamilyPersonContactNumber", family_contact);
             cmd.Parameters.AddWithValue("@FamilyPersonPoliceStation", family_PS);
             cmd.Parameters.AddWithValue("@OfficeID", office_Id);
-            cmd.Parameters.AddWithValue("@CardID",rfid);
+            cmd.Parameters.AddWithValue("@CardID", rfid);
             cmd.Parameters.AddWithValue("@PreviousOfficeIds", previousOfficeID);
             cmd.Parameters.AddWithValue("@CreatedBy", office_Id);
             cmd.Parameters.AddWithValue("@CreatedDate", datetime);
@@ -234,5 +233,7 @@ namespace NavAppDesktopRegistration
 
             MessageBox.Show("everything is uploaded", "success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        #endregion
+        
     }
 }

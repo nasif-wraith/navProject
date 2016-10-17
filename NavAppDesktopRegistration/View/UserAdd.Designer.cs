@@ -32,12 +32,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UserPreviousPassword = new System.Windows.Forms.TextBox();
+            this.UserPassword = new System.Windows.Forms.TextBox();
+            this.UserEmployeeID_box = new System.Windows.Forms.TextBox();
             this.AddUser = new System.Windows.Forms.Button();
             this.resetUser = new System.Windows.Forms.Button();
             this.closeBtn = new System.Windows.Forms.Button();
+            this.superAdmin_check = new System.Windows.Forms.CheckBox();
+            this.admin_check = new System.Windows.Forms.CheckBox();
+            this.Active_check = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,9 +92,12 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.Active_check);
+            this.groupBox1.Controls.Add(this.admin_check);
+            this.groupBox1.Controls.Add(this.superAdmin_check);
+            this.groupBox1.Controls.Add(this.UserPreviousPassword);
+            this.groupBox1.Controls.Add(this.UserPassword);
+            this.groupBox1.Controls.Add(this.UserEmployeeID_box);
             this.groupBox1.Controls.Add(this.AddUser);
             this.groupBox1.Controls.Add(this.resetUser);
             this.groupBox1.Controls.Add(this.closeBtn);
@@ -107,35 +113,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "User Information";
             // 
-            // textBox3
+            // UserPreviousPassword
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UserPreviousPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(192, 107);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(185, 22);
-            this.textBox3.TabIndex = 25;
+            this.UserPreviousPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserPreviousPassword.Location = new System.Drawing.Point(192, 107);
+            this.UserPreviousPassword.Name = "UserPreviousPassword";
+            this.UserPreviousPassword.Size = new System.Drawing.Size(185, 22);
+            this.UserPreviousPassword.TabIndex = 25;
             // 
-            // textBox2
+            // UserPassword
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UserPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(192, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 22);
-            this.textBox2.TabIndex = 25;
+            this.UserPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserPassword.Location = new System.Drawing.Point(192, 73);
+            this.UserPassword.Name = "UserPassword";
+            this.UserPassword.Size = new System.Drawing.Size(185, 22);
+            this.UserPassword.TabIndex = 25;
             // 
-            // textBox1
+            // UserEmployeeID_box
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UserEmployeeID_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(192, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 22);
-            this.textBox1.TabIndex = 25;
+            this.UserEmployeeID_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserEmployeeID_box.Location = new System.Drawing.Point(192, 38);
+            this.UserEmployeeID_box.Name = "UserEmployeeID_box";
+            this.UserEmployeeID_box.Size = new System.Drawing.Size(185, 22);
+            this.UserEmployeeID_box.TabIndex = 25;
             // 
             // AddUser
             // 
@@ -148,6 +154,7 @@
             this.AddUser.TabIndex = 24;
             this.AddUser.Text = "Add User";
             this.AddUser.UseVisualStyleBackColor = false;
+            this.AddUser.Click += new System.EventHandler(this.AddUser_Click);
             // 
             // resetUser
             // 
@@ -172,6 +179,36 @@
             this.closeBtn.TabIndex = 24;
             this.closeBtn.Text = "Close";
             this.closeBtn.UseVisualStyleBackColor = false;
+            // 
+            // superAdmin_check
+            // 
+            this.superAdmin_check.AutoSize = true;
+            this.superAdmin_check.Location = new System.Drawing.Point(33, 142);
+            this.superAdmin_check.Name = "superAdmin_check";
+            this.superAdmin_check.Size = new System.Drawing.Size(115, 20);
+            this.superAdmin_check.TabIndex = 26;
+            this.superAdmin_check.Text = "Super Admin";
+            this.superAdmin_check.UseVisualStyleBackColor = true;
+            // 
+            // admin_check
+            // 
+            this.admin_check.AutoSize = true;
+            this.admin_check.Location = new System.Drawing.Point(198, 142);
+            this.admin_check.Name = "admin_check";
+            this.admin_check.Size = new System.Drawing.Size(70, 20);
+            this.admin_check.TabIndex = 26;
+            this.admin_check.Text = "Admin";
+            this.admin_check.UseVisualStyleBackColor = true;
+            // 
+            // Active_check
+            // 
+            this.Active_check.AutoSize = true;
+            this.Active_check.Location = new System.Drawing.Point(318, 142);
+            this.Active_check.Name = "Active_check";
+            this.Active_check.Size = new System.Drawing.Size(70, 20);
+            this.Active_check.TabIndex = 26;
+            this.Active_check.Text = "Active";
+            this.Active_check.UseVisualStyleBackColor = true;
             // 
             // UserAdd
             // 
@@ -202,9 +239,12 @@
         private System.Windows.Forms.Button AddUser;
         private System.Windows.Forms.Button resetUser;
         private System.Windows.Forms.Button closeBtn;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox UserEmployeeID_box;
+        private System.Windows.Forms.TextBox UserPreviousPassword;
+        private System.Windows.Forms.TextBox UserPassword;
+        private System.Windows.Forms.CheckBox Active_check;
+        private System.Windows.Forms.CheckBox admin_check;
+        private System.Windows.Forms.CheckBox superAdmin_check;
 
     }
 }

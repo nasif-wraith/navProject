@@ -34,6 +34,9 @@
             this.reset_btn = new System.Windows.Forms.Button();
             this.submit_btn = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.fingerprint_box = new System.Windows.Forms.TextBox();
+            this.picture_box = new System.Windows.Forms.TextBox();
+            this.signature_box = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -98,9 +101,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.text_name = new System.Windows.Forms.TextBox();
-            this.signature_box = new System.Windows.Forms.TextBox();
-            this.picture_box = new System.Windows.Forms.TextBox();
-            this.fingerprint_box = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.finger_pictureBox)).BeginInit();
@@ -205,6 +205,27 @@
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "  Extra Information";
+            // 
+            // fingerprint_box
+            // 
+            this.fingerprint_box.Location = new System.Drawing.Point(436, 243);
+            this.fingerprint_box.Name = "fingerprint_box";
+            this.fingerprint_box.Size = new System.Drawing.Size(160, 23);
+            this.fingerprint_box.TabIndex = 37;
+            // 
+            // picture_box
+            // 
+            this.picture_box.Location = new System.Drawing.Point(227, 243);
+            this.picture_box.Name = "picture_box";
+            this.picture_box.Size = new System.Drawing.Size(160, 23);
+            this.picture_box.TabIndex = 37;
+            // 
+            // signature_box
+            // 
+            this.signature_box.Location = new System.Drawing.Point(18, 243);
+            this.signature_box.Name = "signature_box";
+            this.signature_box.Size = new System.Drawing.Size(160, 23);
+            this.signature_box.TabIndex = 37;
             // 
             // button8
             // 
@@ -784,21 +805,6 @@
             // rankCombo
             // 
             this.rankCombo.FormattingEnabled = true;
-            this.rankCombo.Items.AddRange(new object[] {
-            "leading seaman",
-            "petty office",
-            "chief petty officer",
-            "master chief petty officer",
-            "mid ship man",
-            "sub lieutenant",
-            "lieutenant",
-            "lieutenant commander",
-            "captain",
-            "comodor",
-            "real admiral,",
-            "vice admiral",
-            "admiral",
-            "admiral of the fleet"});
             this.rankCombo.Location = new System.Drawing.Point(110, 80);
             this.rankCombo.Name = "rankCombo";
             this.rankCombo.Size = new System.Drawing.Size(95, 24);
@@ -945,27 +951,6 @@
             this.text_name.Name = "text_name";
             this.text_name.Size = new System.Drawing.Size(473, 23);
             this.text_name.TabIndex = 0;
-            // 
-            // signature_box
-            // 
-            this.signature_box.Location = new System.Drawing.Point(18, 243);
-            this.signature_box.Name = "signature_box";
-            this.signature_box.Size = new System.Drawing.Size(160, 23);
-            this.signature_box.TabIndex = 37;
-            // 
-            // picture_box
-            // 
-            this.picture_box.Location = new System.Drawing.Point(227, 243);
-            this.picture_box.Name = "picture_box";
-            this.picture_box.Size = new System.Drawing.Size(160, 23);
-            this.picture_box.TabIndex = 37;
-            // 
-            // fingerprint_box
-            // 
-            this.fingerprint_box.Location = new System.Drawing.Point(436, 243);
-            this.fingerprint_box.Name = "fingerprint_box";
-            this.fingerprint_box.Size = new System.Drawing.Size(160, 23);
-            this.fingerprint_box.TabIndex = 37;
             // 
             // EmployeeRegistrationView
             // 

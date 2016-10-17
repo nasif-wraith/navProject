@@ -79,6 +79,18 @@
     <Compile Include="Helper\MenuMakeHelper.cs" />
     <Compile Include="Model\EmployeeModel.cs" />
     <Compile Include="Model\UserModel.cs" />
+    <Compile Include="View\BranchCreateView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BranchCreateView.Designer.cs">
+      <DependentUpon>BranchCreateView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DepartmentCreateView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DepartmentCreateView.Designer.cs">
+      <DependentUpon>DepartmentCreateView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\EmployeeRegistrationView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +139,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\BranchCreateView.resx">
+      <DependentUpon>BranchCreateView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DepartmentCreateView.resx">
+      <DependentUpon>DepartmentCreateView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\EmployeeRegistrationView.resx">
       <DependentUpon>EmployeeRegistrationView.cs</DependentUpon>
     </EmbeddedResource>

@@ -10,27 +10,25 @@ using System.Windows.Forms;
 
 namespace NavAppDesktopRegistration
 {
-    public partial class Rank : Form
+    public partial class DepartmentCreateView : Form
     {
-        #region private field
+        #region private fields
         private UserModel _currentUser;
         private Form _prevForm;
         #endregion
+
         #region ctor
-        public Rank()
+        public DepartmentCreateView()
         {
             InitializeComponent();
         }
-
-        public Rank(UserModel currentUser, Form prevForm)
+        public DepartmentCreateView(UserModel currentUser, Form prevForm)
         {
             InitializeComponent();
             _currentUser = currentUser;
             _prevForm = prevForm;
         }
         #endregion
-        #region events or callback
-
-        #endregion
+        
     }
 }

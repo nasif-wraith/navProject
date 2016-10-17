@@ -18,7 +18,8 @@ namespace NavAppDesktopRegistration
         private EmployeeRegistrationView _employeeRegistrationView ;
         private UserAdd _userAdd;
         private Rank _rank ;
-
+        private BranchCreateView _branch;
+        private DepartmentCreateView _dept;
         #endregion
 
         #region Ctor
@@ -39,8 +40,8 @@ namespace NavAppDesktopRegistration
         public void initAllForm()
         {
             _employeeRegistrationView = new EmployeeRegistrationView(_currentUser, _previousForm);
-            _userAdd = new UserAdd(_currentUser);
-            _rank = new Rank(_currentUser);
+            _userAdd = new UserAdd(_currentUser,_previousForm);
+            _rank = new Rank(_currentUser,_previousForm);// 
         }
         #endregion
 
@@ -95,8 +96,51 @@ namespace NavAppDesktopRegistration
         {
             formClose();
         }
+        
+
+        private void showBasicUserInfo(object sender, FormClosedEventArgs e)
+        {
+           // throw new NotImplementedException();
+            showHideUserInfo(true);
+        }
+        
+        private void LogoutExitLink_Click(object sender, EventArgs e)
+        {
+            formClose();
+        }
+        #endregion
+
+        #region one instance will open methods
+        private void rankAdd_Click(object sender, EventArgs e)
+        {
+            showHideUserInfo(false);
+            //Rank rank = new Rank(_currentUser);
+            _rank.MdiParent = this;
+            _rank.Show();
+            _userAdd.Hide();
+            _dept.Hide();
+            _branch.Hide();
+            _rank.FormClosed += showBasicUserInfo;
+            _employeeRegistrationView.Hide();
+        }
+        private void branchAdd_Click(object sender, EventArgs e)
+        {
+            _userAdd.Hide();
+            _rank.Hide();
+            _employeeRegistrationView.Hide();
+            _dept.Hide();
+            showHideUserInfo(false);
+            _branch.MdiParent = this;
+            _branch.Show();
+            _branch.FormClosed += showBasicUserInfo;
+            
+        }
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //_rank.Hide();
+            //_userAdd.Hide();
+           // _dept.Hide();
+            //_branch.Hide();
             showHideUserInfo(false);
             //_employeeRegistrationView = new EmployeeRegistrationView(_currentUser);
             // Set the Parent Form of the Child window.
@@ -104,14 +148,18 @@ namespace NavAppDesktopRegistration
             // Display the new form.
             _employeeRegistrationView.Show();
             _employeeRegistrationView.FormClosed += showBasicUserInfo;
-            _rank.Hide();
-            _userAdd.Hide();
+            
         }
-
-        private void showBasicUserInfo(object sender, FormClosedEventArgs e)
+        private void AddDepartmenttab_Click(object sender, EventArgs e)
         {
-           // throw new NotImplementedException();
-            showHideUserInfo(true);
+            _userAdd.Hide();
+            _rank.Hide();
+            _employeeRegistrationView.Hide();
+            _branch.Hide();
+            showHideUserInfo(false);
+            _dept.MdiParent = this;
+            _dept.Show();
+            _dept.FormClosed += showBasicUserInfo;
         }
         private void addToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -120,27 +168,18 @@ namespace NavAppDesktopRegistration
             _userAdd.MdiParent = this;
             _userAdd.Show();
             _rank.Hide();
+            _dept.Hide();
+            _branch.Hide();
             _employeeRegistrationView.Hide();
             _userAdd.FormClosed += showBasicUserInfo;
-
-
         }
-        private void LogoutExitLink_Click(object sender, EventArgs e)
-        {
-            formClose();
-        }
+        
         #endregion
 
-        private void rankAdd_Click(object sender, EventArgs e)
-        {
-            showHideUserInfo(false);
-            //Rank rank = new Rank(_currentUser);
-            _rank.MdiParent = this;
-            _rank.Show();
-            _userAdd.Hide();
-            _rank.FormClosed += showBasicUserInfo;
-            _employeeRegistrationView.Hide();
-        }
+        
+
+       
+       
 
       
 
