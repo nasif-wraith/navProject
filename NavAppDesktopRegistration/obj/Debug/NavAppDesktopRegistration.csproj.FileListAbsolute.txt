@@ -52,3 +52,4 @@ C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\bin\Debug\Navy Regis
 C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.pdb
 C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.exe.manifest
 C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.application
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.csprojResolveAssemblyReference.cache

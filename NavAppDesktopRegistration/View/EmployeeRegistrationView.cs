@@ -78,11 +78,17 @@ namespace NavAppDesktopRegistration
         }
 
         #region Private Methods
-        //void loadAllCombo()
-        //{
-        //    rankCombo.DataSource = Enum.GetValues(typeof(RanksEnum));
+        void loadAllCombo(ComboBox rankCombo)
+        {
+            rankCombo.DataSource = Enum.GetValues(typeof(RanksEnum)).Cast<Enum>().Select(value => new
+            {
+                (Attribute.GetCustomAttribute(value.GetType().GetField(value.ToString()), typeof(DescriptionAttribute)) as DescriptionAttribute).Description,
+                value
+            }).OrderBy(item => item.value).ToList();
+            rankCombo.DisplayMember = "Description";
+            rankCombo.ValueMember = "value";
 
-        //}
+        }
         void formClose()
         {
             //this.Hide();
@@ -108,7 +114,7 @@ namespace NavAppDesktopRegistration
         {
             string employeeName = text_name.Text;
             string nationalID = nationalId_box.Text;
-           // string rank = rankCombo.SelectedText;
+            string rank = rankCombo.SelectedText;
             string dept = dept_combo.SelectedText;
             string branch = branch_combo.SelectedText;
             DateTime dob = dob_dateTimePicker.Value;
@@ -135,7 +141,7 @@ namespace NavAppDesktopRegistration
             int rfid = Int32.Parse(RFID_box.Text);
             string previousOfficeID = "0";
 
-            int r=1;
+            //int r=1;
 
             //string rank = rankCombo.SelectedItem.ToString();
             //if(rank=="leading seaman")
@@ -181,7 +187,7 @@ namespace NavAppDesktopRegistration
             //SqlParameter prmName = 
             cmd.Parameters.AddWithValue("@EmployeeName", employeeName);
             cmd.Parameters.AddWithValue("@NationalID", nationalID);
-            cmd.Parameters.AddWithValue("@RankID", r);
+            cmd.Parameters.AddWithValue("@RankID", rank);
             cmd.Parameters.AddWithValue("@DepartmentID", dept);
             cmd.Parameters.AddWithValue("@BranchID", branch);
             cmd.Parameters.AddWithValue("@IssuedCardID", issuedcardID);
