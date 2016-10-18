@@ -777,7 +777,7 @@
             // dept_combo
             // 
             this.dept_combo.FormattingEnabled = true;
-            this.dept_combo.Location = new System.Drawing.Point(288, 80);
+            this.dept_combo.Location = new System.Drawing.Point(307, 80);
             this.dept_combo.Name = "dept_combo";
             this.dept_combo.Size = new System.Drawing.Size(95, 24);
             this.dept_combo.TabIndex = 22;
@@ -795,9 +795,9 @@
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(211, 80);
+            this.label10.Location = new System.Drawing.Point(256, 81);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(71, 20);
+            this.label10.Size = new System.Drawing.Size(45, 20);
             this.label10.TabIndex = 20;
             this.label10.Text = "Dept :";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -807,7 +807,7 @@
             this.rankCombo.FormattingEnabled = true;
             this.rankCombo.Location = new System.Drawing.Point(110, 80);
             this.rankCombo.Name = "rankCombo";
-            this.rankCombo.Size = new System.Drawing.Size(95, 24);
+            this.rankCombo.Size = new System.Drawing.Size(140, 24);
             this.rankCombo.TabIndex = 19;
             // 
             // label9
@@ -836,13 +836,14 @@
             // 
             this.maritalStatus_combo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.maritalStatus_combo.DropDownWidth = 160;
             this.maritalStatus_combo.FormattingEnabled = true;
             this.maritalStatus_combo.Items.AddRange(new object[] {
             "Married",
             "Unmarriede"});
-            this.maritalStatus_combo.Location = new System.Drawing.Point(398, 368);
+            this.maritalStatus_combo.Location = new System.Drawing.Point(411, 368);
             this.maritalStatus_combo.Name = "maritalStatus_combo";
-            this.maritalStatus_combo.Size = new System.Drawing.Size(185, 24);
+            this.maritalStatus_combo.Size = new System.Drawing.Size(172, 24);
             this.maritalStatus_combo.TabIndex = 16;
             // 
             // label8

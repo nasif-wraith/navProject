@@ -22,6 +22,8 @@ namespace NavAppDesktopRegistration
         private string picturetext;
         private string fingerprinttext;
         private Form _previousForm;
+        //private static EmployeeRegistrationView instance = null;
+        //private static readonly object padlock = new object();
         #endregion
 
         #region ctor
@@ -34,21 +36,44 @@ namespace NavAppDesktopRegistration
             InitializeComponent();
             _currentUser = currentUser;
             _previousForm = prevForm;
-            loadAllCombo(rankCombo);
+            loadAllCombo(rankCombo, typeof(RanksEnum));
+            loadAllCombo(bloodGrpCombo, typeof(BloodGroupEnum));
+            loadAllCombo(maritalStatus_combo, typeof(MarriedEnum));
             
         }
-        #endregion            
+        #endregion
 
-        #region Private Meth
-        void loadAllCombo(ComboBox rankCombo)//ok tata :)
+        #region public methods
+
+        //public static EmployeeRegistrationView Instance
+        //{
+        //    get
+        //    {
+        //        lock (padlock)
+        //        {
+        //            if (instance == null)
+        //            {
+        //                instance = new EmployeeRegistrationView();
+        //            }
+        //            return instance;
+        //        }
+        //    }
+        //}
+
+        #endregion
+
+
+        #region Private Method
+
+        void loadAllCombo(ComboBox combobox,Type enumType)
         {
-            rankCombo.DataSource = Enum.GetValues(typeof(RanksEnum)).Cast<Enum>().Select(value => new
+            combobox.DataSource = Enum.GetValues(enumType).Cast<Enum>().Select(value => new
             {
                 (Attribute.GetCustomAttribute(value.GetType().GetField(value.ToString()), typeof(DescriptionAttribute)) as DescriptionAttribute).Description,
                 value
             }).OrderBy(item => item.value).ToList();
-            rankCombo.DisplayMember = "Description";
-            rankCombo.ValueMember = "value";
+            combobox.DisplayMember = "Description";
+            combobox.ValueMember = "value";
 
         }
         void formClose()
@@ -58,7 +83,6 @@ namespace NavAppDesktopRegistration
             this.Close();
         }
        
-
         #endregion
 
         #region private events or callback

@@ -10,47 +10,57 @@ namespace NavAppDesktopRegistration
 
     public enum RanksEnum:short
     {
-        [Description("leading seaman")]
-        leading_seaman = 1,
-        [Description("petty officer")]
-        petty_officer = 2,
-        [Description("chief petty officer")]
-        chief_petty_officer = 3,
-        [Description("master chief petty officer")]
-        master_chief_petty_officer = 4,
-        [Description("midshipman")]
-        midshipman = 5,
-        [Description("sub lieutenant")]
-        sub_lieutenant = 6,
-        [Description("lieutenant")]
-        lieutenant = 7,
-        [Description("lieutenant commander")]
-        lieutenant_commander = 8,
-        [Description("captain")]
-        captain = 9,
-        [Description("comodor")]
-        comodor = 10,
-        [Description("rear admiral")]
-        rear_admiral = 11,
-        [Description("vice admiral")]
-        vice_admiral = 12
+        [Description("Leading Seaman")]
+        LeadingSeaman = 1,
+        [Description("Petty Officer")]
+        PettyOfficer = 2,
+        [Description("Chief Petty Officer")]
+        ChiefPattyOfficer = 3,
+        [Description("Master Chief Petty Officer")]
+        MasterChiefPettyOfficer = 4,
+        [Description("Midshipman")]
+        MidShipMan = 5,
+        [Description("Sub Lieutenant")]
+        SubLieutenant = 6,
+        [Description("Lieutenant")]
+        Lieutenant = 7,
+        [Description("Lieutenant Commander")]
+        LieutenantCommander = 8,
+        [Description("Captain")]
+        Captain = 9,
+        [Description("Comodor")]
+        Comodor = 10,
+        [Description("Rear Admiral")]
+        RearAdmiral = 11,
+        [Description("Vice Admiral")]
+        ViceAdmiral = 12
 
     }
-    public enum marriedEnum
+    public enum MarriedEnum:short
     {
-        married = 1,
-        unmarried = 0
+        [Description("Unmarried")]
+        Unmarried = 0,
+        [Description("Married")]
+        Married = 1
     }
-    public enum bloodgroupEnum
+    public enum BloodGroupEnum:short
     {
-        A_positive = 1,
-       A_negative = 2,
-        B_positive = 3,
-        B_negative  =4,
-        O_positive = 5,
-        O_negative = 6,
-        AB_positive = 7,
-        AB_negative =8
+        [Description("A+")]
+        APositive = 1,
+        [Description("A-")]
+        ANegative = 2,
+        [Description("B+")]
+        BPositive = 3,
+        [Description("B-")]
+        BNegative  =4,
+        [Description("O+")]
+        OPositive = 5,
+        [Description("O-")]
+        ONegative = 6,
+        [Description("AB+")]
+        ABPositive = 7,
+        [Description("AB-")]
+        ABNegative =8
 
     }
 }

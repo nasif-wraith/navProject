@@ -15,6 +15,7 @@ namespace NavAppDesktopRegistration
         #region private fields
         private UserModel _currentUser;
         private Form _prevForm;
+        //private static DepartmentCreateView instance;
         #endregion
 
         #region ctor
@@ -29,6 +30,21 @@ namespace NavAppDesktopRegistration
             _prevForm = prevForm;
         }
         #endregion
-        
+
+        #region public methods
+
+        //public static DepartmentCreateView Instance
+        //{
+        //    get
+        //    {
+        //        if (instance == null)
+        //        {
+        //            instance = new DepartmentCreateView();
+        //        }
+        //        return instance;
+        //    }
+        //}
+
+        #endregion
     }
 }
