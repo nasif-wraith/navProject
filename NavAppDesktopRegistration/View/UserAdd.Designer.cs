@@ -32,15 +32,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Active_check = new System.Windows.Forms.CheckBox();
+            this.AdminChk = new System.Windows.Forms.CheckBox();
+            this.SuperAdminChk = new System.Windows.Forms.CheckBox();
             this.UserPreviousPassword = new System.Windows.Forms.TextBox();
             this.UserPassword = new System.Windows.Forms.TextBox();
             this.UserEmployeeID_box = new System.Windows.Forms.TextBox();
             this.AddUser = new System.Windows.Forms.Button();
             this.resetUser = new System.Windows.Forms.Button();
             this.closeBtn = new System.Windows.Forms.Button();
-            this.superAdmin_check = new System.Windows.Forms.CheckBox();
-            this.admin_check = new System.Windows.Forms.CheckBox();
-            this.Active_check = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,8 +93,8 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.Active_check);
-            this.groupBox1.Controls.Add(this.admin_check);
-            this.groupBox1.Controls.Add(this.superAdmin_check);
+            this.groupBox1.Controls.Add(this.AdminChk);
+            this.groupBox1.Controls.Add(this.SuperAdminChk);
             this.groupBox1.Controls.Add(this.UserPreviousPassword);
             this.groupBox1.Controls.Add(this.UserPassword);
             this.groupBox1.Controls.Add(this.UserEmployeeID_box);
@@ -112,6 +112,36 @@
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "User Information";
+            // 
+            // Active_check
+            // 
+            this.Active_check.AutoSize = true;
+            this.Active_check.Location = new System.Drawing.Point(318, 142);
+            this.Active_check.Name = "Active_check";
+            this.Active_check.Size = new System.Drawing.Size(70, 20);
+            this.Active_check.TabIndex = 26;
+            this.Active_check.Text = "Active";
+            this.Active_check.UseVisualStyleBackColor = true;
+            // 
+            // AdminChk
+            // 
+            this.AdminChk.AutoSize = true;
+            this.AdminChk.Location = new System.Drawing.Point(198, 142);
+            this.AdminChk.Name = "AdminChk";
+            this.AdminChk.Size = new System.Drawing.Size(70, 20);
+            this.AdminChk.TabIndex = 26;
+            this.AdminChk.Text = "Admin";
+            this.AdminChk.UseVisualStyleBackColor = true;
+            // 
+            // SuperAdminChk
+            // 
+            this.SuperAdminChk.AutoSize = true;
+            this.SuperAdminChk.Location = new System.Drawing.Point(33, 142);
+            this.SuperAdminChk.Name = "SuperAdminChk";
+            this.SuperAdminChk.Size = new System.Drawing.Size(115, 20);
+            this.SuperAdminChk.TabIndex = 26;
+            this.SuperAdminChk.Text = "Super Admin";
+            this.SuperAdminChk.UseVisualStyleBackColor = true;
             // 
             // UserPreviousPassword
             // 
@@ -180,36 +210,6 @@
             this.closeBtn.Text = "Close";
             this.closeBtn.UseVisualStyleBackColor = false;
             // 
-            // superAdmin_check
-            // 
-            this.superAdmin_check.AutoSize = true;
-            this.superAdmin_check.Location = new System.Drawing.Point(33, 142);
-            this.superAdmin_check.Name = "superAdmin_check";
-            this.superAdmin_check.Size = new System.Drawing.Size(115, 20);
-            this.superAdmin_check.TabIndex = 26;
-            this.superAdmin_check.Text = "Super Admin";
-            this.superAdmin_check.UseVisualStyleBackColor = true;
-            // 
-            // admin_check
-            // 
-            this.admin_check.AutoSize = true;
-            this.admin_check.Location = new System.Drawing.Point(198, 142);
-            this.admin_check.Name = "admin_check";
-            this.admin_check.Size = new System.Drawing.Size(70, 20);
-            this.admin_check.TabIndex = 26;
-            this.admin_check.Text = "Admin";
-            this.admin_check.UseVisualStyleBackColor = true;
-            // 
-            // Active_check
-            // 
-            this.Active_check.AutoSize = true;
-            this.Active_check.Location = new System.Drawing.Point(318, 142);
-            this.Active_check.Name = "Active_check";
-            this.Active_check.Size = new System.Drawing.Size(70, 20);
-            this.Active_check.TabIndex = 26;
-            this.Active_check.Text = "Active";
-            this.Active_check.UseVisualStyleBackColor = true;
-            // 
             // UserAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,8 +243,8 @@
         private System.Windows.Forms.TextBox UserPreviousPassword;
         private System.Windows.Forms.TextBox UserPassword;
         private System.Windows.Forms.CheckBox Active_check;
-        private System.Windows.Forms.CheckBox admin_check;
-        private System.Windows.Forms.CheckBox superAdmin_check;
+        private System.Windows.Forms.CheckBox AdminChk;
+        private System.Windows.Forms.CheckBox SuperAdminChk;
 
     }
 }

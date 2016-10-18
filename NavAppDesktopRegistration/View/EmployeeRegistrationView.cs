@@ -202,7 +202,9 @@ namespace NavAppDesktopRegistration
 
             DateTime datetime = DateTime.Now;
             //string datetime = "'20161025'";
-            string connectionString = @"Data Source=DESKTOP-7FART4C\SQLEXPRESS;Initial Catalog=FInal_navy;Integrated Security=True";
+            //string connectionString = @"Data Source=DESKTOP-7FART4C\SQLEXPRESS;Initial Catalog=FInal_navy;Integrated Security=True";
+            string connectionString = @"Data Source=DESKTOP-AG0F2UT\NASIF;Initial Catalog=FInal_navy;Integrated Security=True";
+
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
             SqlCommand cmd = new SqlCommand("emp_register", con);

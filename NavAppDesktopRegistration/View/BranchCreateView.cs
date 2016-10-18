@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -44,6 +45,41 @@ namespace NavAppDesktopRegistration
         //        return instance;
         //    }
         //}
+        #endregion
+
+        #region callback or event
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            BranchModel branchModel = new BranchModel();
+            //branchModel.BranchName = txtBranchName.Text;
+            branchModel.Address = txtBranchAddress.Text;
+            branchModel.Contact = txtContact.Text;
+            //branchModel.DepartmentID = Int32.Parse(txtDepartmentID.Text);
+
+            string connectionString = @"Data Source=DESKTOP-AG0F2UT\NASIF;Initial Catalog=FInal_navy;Integrated Security=True";
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("Branch_in", con);
+            //cmd.Parameters.AddWithValue("@BranchName", branchModel.BranchName);
+            cmd.Parameters.AddWithValue("@Address", branchModel.Address);
+            cmd.Parameters.AddWithValue("@Contact", branchModel.Contact);
+            //cmd.Parameters.AddWithValue("@DepartmentID", branchModel.DepartmentID);
+            cmd.Parameters.AddWithValue("@CreatedBy", _currentUser.UserID);
+            cmd.Parameters.AddWithValue("@CreatedDate", DateTime.Now);
+            cmd.Parameters.AddWithValue("@ModifiedBy", _currentUser.UserID);
+            cmd.Parameters.AddWithValue("@ModifiedDate", DateTime.Now);
+            SqlParameter BranchId = new SqlParameter()
+            {
+                ParameterName = "@BranchID",
+                Value = -1,
+                Direction = ParameterDirection.Output
+            };
+            cmd.Parameters.Add(BranchId);
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+        }
         #endregion
     }
 }

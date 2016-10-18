@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -31,6 +32,8 @@ namespace NavAppDesktopRegistration
         }
         #endregion
 
+        
+
         #region public methods
 
         //public static DepartmentCreateView Instance
@@ -45,6 +48,37 @@ namespace NavAppDesktopRegistration
         //    }
         //}
 
+        #endregion
+
+        #region event or callback
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            DepartmentModel dept = new DepartmentModel();
+            dept.DepartmentName = txtDepartmentName.Text;
+            dept.CreatedBy = _currentUser.UserID;
+            dept.CreatedDate = DateTime.Now;
+            dept.ModifiedBy = _currentUser.UserID;
+            dept.ModifiedDate = DateTime.Now;
+            string connectionString = @"Data Source=DESKTOP-AG0F2UT\NASIF;Initial Catalog=FInal_navy;Integrated Security=True";
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("Department_in", con);
+            cmd.Parameters.AddWithValue("@DepartmentName", dept.DepartmentName);
+            cmd.Parameters.AddWithValue("@CreatedBy", _currentUser.UserID);
+            cmd.Parameters.AddWithValue("@CreatedDate", DateTime.Now);
+            cmd.Parameters.AddWithValue("@ModifiedBy", _currentUser.UserID);
+            cmd.Parameters.AddWithValue("@ModifiedDate", DateTime.Now);
+            SqlParameter DepartmentID = new SqlParameter()
+            {
+                ParameterName = "@DepartmentID",
+                Value = -1,
+                Direction = ParameterDirection.Output
+            };
+            cmd.Parameters.Add(DepartmentID);
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
         #endregion
     }
 }

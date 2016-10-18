@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BranchCreateView));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Contact_box = new System.Windows.Forms.TextBox();
-            this.BranchAddress_box = new System.Windows.Forms.TextBox();
-            this.branch_box = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.txtContact = new System.Windows.Forms.TextBox();
+            this.txtBranchAddress = new System.Windows.Forms.TextBox();
+            this.txtBranchName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,12 +48,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.Contact_box);
-            this.groupBox1.Controls.Add(this.BranchAddress_box);
-            this.groupBox1.Controls.Add(this.branch_box);
+            this.groupBox1.Controls.Add(this.btnAdd);
+            this.groupBox1.Controls.Add(this.btnReset);
+            this.groupBox1.Controls.Add(this.btnClose);
+            this.groupBox1.Controls.Add(this.txtContact);
+            this.groupBox1.Controls.Add(this.txtBranchAddress);
+            this.groupBox1.Controls.Add(this.txtBranchName);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -67,66 +67,67 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Branch Information";
             // 
-            // button3
+            // btnAdd
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(324, 183);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 31);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAdd.BackColor = System.Drawing.Color.Silver;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.Black;
+            this.btnAdd.Location = new System.Drawing.Point(324, 183);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(97, 31);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btnReset
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(187, 183);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 31);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.Black;
+            this.btnReset.Location = new System.Drawing.Point(187, 183);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(97, 31);
+            this.btnReset.TabIndex = 2;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnClose
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(50, 183);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 31);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Close";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.Black;
+            this.btnClose.Location = new System.Drawing.Point(50, 183);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(97, 31);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
             // 
-            // Contact_box
+            // txtContact
             // 
-            this.Contact_box.Location = new System.Drawing.Point(153, 126);
-            this.Contact_box.Name = "Contact_box";
-            this.Contact_box.Size = new System.Drawing.Size(257, 22);
-            this.Contact_box.TabIndex = 1;
+            this.txtContact.Location = new System.Drawing.Point(153, 137);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(257, 22);
+            this.txtContact.TabIndex = 1;
             // 
-            // BranchAddress_box
+            // txtBranchAddress
             // 
-            this.BranchAddress_box.Location = new System.Drawing.Point(153, 78);
-            this.BranchAddress_box.Name = "BranchAddress_box";
-            this.BranchAddress_box.Size = new System.Drawing.Size(257, 22);
-            this.BranchAddress_box.TabIndex = 1;
+            this.txtBranchAddress.Location = new System.Drawing.Point(153, 87);
+            this.txtBranchAddress.Name = "txtBranchAddress";
+            this.txtBranchAddress.Size = new System.Drawing.Size(257, 22);
+            this.txtBranchAddress.TabIndex = 1;
             // 
-            // branch_box
+            // txtBranchName
             // 
-            this.branch_box.Location = new System.Drawing.Point(153, 37);
-            this.branch_box.Name = "branch_box";
-            this.branch_box.Size = new System.Drawing.Size(257, 22);
-            this.branch_box.TabIndex = 1;
+            this.txtBranchName.Location = new System.Drawing.Point(153, 37);
+            this.txtBranchName.Name = "txtBranchName";
+            this.txtBranchName.Size = new System.Drawing.Size(257, 22);
+            this.txtBranchName.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(70, 126);
+            this.label3.Location = new System.Drawing.Point(70, 137);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 16);
             this.label3.TabIndex = 0;
@@ -137,7 +138,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(66, 81);
+            this.label2.Location = new System.Drawing.Point(64, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 16);
             this.label2.TabIndex = 0;
@@ -183,14 +184,14 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Contact_box;
-        private System.Windows.Forms.TextBox BranchAddress_box;
-        private System.Windows.Forms.TextBox branch_box;
+        private System.Windows.Forms.TextBox txtContact;
+        private System.Windows.Forms.TextBox txtBranchAddress;
+        private System.Windows.Forms.TextBox txtBranchName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnReset;
 
     }
 }

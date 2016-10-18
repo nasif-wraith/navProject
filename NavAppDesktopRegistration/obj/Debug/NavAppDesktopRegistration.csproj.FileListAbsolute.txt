@@ -53,16 +53,13 @@ C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\bin\Debug\Navy Regis
 C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.exe.manifest
 C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.application
 C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.csprojResolveAssemblyReference.cache
-E:\navy project\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe.config
 E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.exe
-E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.pdb
-E:\navy project\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe.manifest
-E:\navy project\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.application
-E:\navy project\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe
-E:\navy project\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.pdb
-E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.csprojResolveAssemblyReference.cache
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.BranchCreateView.resources
+C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.DepartmentCreateView.resources
 E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.g.resources
 E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Properties.Resources.resources
+E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.BranchCreateView.resources
+E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.DepartmentCreateView.resources
 E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.EmployeeRegistrationView.resources
 E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Loader.resources
 E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.Login.resources
@@ -70,9 +67,12 @@ E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegi
 E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.RegistrationFormMain.resources
 E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.UserAdd.resources
 E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.csproj.GenerateResource.Cache
+E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.pdb
+E:\navy project\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe.config
+E:\navy project\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe.manifest
+E:\navy project\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.application
+E:\navy project\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.exe
+E:\navy project\navProject\NavAppDesktopRegistration\bin\Debug\Navy Registration.pdb
+E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.csprojResolveAssemblyReference.cache
 E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.exe.manifest
 E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\Navy Registration.application
-E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.BranchCreateView.resources
-E:\navy project\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.DepartmentCreateView.resources
-C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.BranchCreateView.resources
-C:\Users\Tareq\Desktop\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.DepartmentCreateView.resources

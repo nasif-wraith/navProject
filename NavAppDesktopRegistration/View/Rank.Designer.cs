@@ -33,7 +33,7 @@
             this.resetRank = new System.Windows.Forms.Button();
             this.addRank = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.RankNameTB = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -46,7 +46,7 @@
             this.groupBox1.Controls.Add(this.resetRank);
             this.groupBox1.Controls.Add(this.addRank);
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.RankNameTB);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -103,13 +103,13 @@
             this.comboBox1.Size = new System.Drawing.Size(289, 24);
             this.comboBox1.TabIndex = 3;
             // 
-            // textBox1
+            // RankNameTB
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(130, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(289, 22);
-            this.textBox1.TabIndex = 2;
+            this.RankNameTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RankNameTB.Location = new System.Drawing.Point(130, 56);
+            this.RankNameTB.Name = "RankNameTB";
+            this.RankNameTB.Size = new System.Drawing.Size(289, 22);
+            this.RankNameTB.TabIndex = 2;
             // 
             // label2
             // 
@@ -161,7 +161,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox RankNameTB;
         private System.Windows.Forms.Button addRank;
         private System.Windows.Forms.Button resetRank;
         private System.Windows.Forms.Button closeBtn;
