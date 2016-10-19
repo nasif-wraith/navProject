@@ -51,16 +51,18 @@ namespace NavAppDesktopRegistration
         private void btnAdd_Click(object sender, EventArgs e)
         {
             BranchModel branchModel = new BranchModel();
-            //branchModel.BranchName = txtBranchName.Text;
+            branchModel.BranchName = txtBranchName.Text;
             branchModel.Address = txtBranchAddress.Text;
             branchModel.Contact = txtContact.Text;
             //branchModel.DepartmentID = Int32.Parse(txtDepartmentID.Text);
 
             string connectionString = @"Data Source=DESKTOP-AG0F2UT\NASIF;Initial Catalog=FInal_navy;Integrated Security=True";
+            //string connectionString = @"Data Source=192.168.0.107,49170;Initial Catalog=FInal_navy ;User ID=sa;Password=sa;Integrated Security=True";
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
             SqlCommand cmd = new SqlCommand("Branch_in", con);
-            //cmd.Parameters.AddWithValue("@BranchName", branchModel.BranchName);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@BranchName", branchModel.BranchName);
             cmd.Parameters.AddWithValue("@Address", branchModel.Address);
             cmd.Parameters.AddWithValue("@Contact", branchModel.Contact);
             //cmd.Parameters.AddWithValue("@DepartmentID", branchModel.DepartmentID);
@@ -72,7 +74,7 @@ namespace NavAppDesktopRegistration
             {
                 ParameterName = "@BranchID",
                 Value = -1,
-                Direction = ParameterDirection.Output
+                Direction = ParameterDirection.ReturnValue
             };
             cmd.Parameters.Add(BranchId);
 

@@ -18,6 +18,7 @@ namespace NavAppDesktopRegistration
         
         #region private fields
         private UserModel _currentUser;
+        private EmployeeModel _employee;
         private string signaturetext;
         private string picturetext;
         private string fingerprinttext;
@@ -96,6 +97,7 @@ namespace NavAppDesktopRegistration
                 signature_pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 //textBox1.Text = pic.FileName;
                 signature_box.Text = pic.FileName;
+                _employee.EmployeeSignatureFilePath = pic.FileName;
                 //MessageBox.Show("path is " + signature_pictureBox.ImageLocation);
             }
         }
@@ -110,6 +112,7 @@ namespace NavAppDesktopRegistration
                 picture_pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 //textBox1.Text = pic.FileName;
                 picture_box.Text = pic.FileName;
+                _employee.EmployeeImagePath = pic.FileName;
                 // MessageBox.Show("path is " + picture_pictureBox.ImageLocation);
             }
         }
@@ -124,6 +127,7 @@ namespace NavAppDesktopRegistration
                 finger_pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 //textBox1.Text = pic.FileName;
                 fingerprint_box.Text = pic.FileName;
+                _employee.FingerPrintPath = pic.FileName;
                 //MessageBox.Show("path is " + finger_pictureBox.ImageLocation);
             }
         }
@@ -135,34 +139,32 @@ namespace NavAppDesktopRegistration
 
         private void submit_btn_Click(object sender, EventArgs e)
         {
-            string employeeName = text_name.Text;
-            string nationalID = nationalId_box.Text;
-            string rank = rankCombo.SelectedText;
-            string dept = dept_combo.SelectedText;
-            string branch = branch_combo.SelectedText;
-            DateTime dob = dob_dateTimePicker.Value;
-            //string dob = "'20161025'";
-            //DateTime dob = dob_dateTimePicker.Value.Date
-            string height = height_box.Text;
-            string blood_Group = bloodGrpCombo.SelectedText;
-            string identification = identificationMark_box.Text;
-            DateTime doj = doj_datetimepicker.Value;
-            //string doj = "'20161025'"; 
-            string employer_catagory = EmployeesCatagory_box.Text;
-            string marital_status = maritalStatus_combo.SelectedText;
-            string present_address = presentAddress_box.Text;
-            string permanent_address = permanentAddress_box.Text;
-            string email = email_box.Text;
-            string contact = contact_box.Text;
-            string police_station = policeStation_box.Text;
-            string police_stationContact = pscontact_box.Text;
-            string family_person_name = f_memberName_box.Text;
-            string family_NID = f_memberNID_box.Text;
-            string family_contact = f_memberContact_box.Text;
-            string family_PS = f_memberPS_box.Text;
-            int office_Id = 0;
+            _employee.EmployeeName = text_name.Text;
+            _employee.NationalID = nationalId_box.Text;
+            //string rank = rankCombo.SelectedText;
+            _employee.RankID = 1;
+            _employee.DepartmentID = 1; //dept_combo.SelectedText;
+            _employee.BranchID = 1; // branch_combo.SelectedText;
+            _employee.DateOfBirth = dob_dateTimePicker.Value;
+            _employee.Height = height_box.Text;
+            _employee.BloodGroup = bloodGrpCombo.SelectedText;
+            _employee.IdentificationMark = identificationMark_box.Text;
+            _employee.DateOfJoining = doj_datetimepicker.Value;
+            _employee.EmployersCatagory = EmployeesCatagory_box.Text;
+            _employee.MaritalStatus = 1; // maritalStatus_combo.SelectedText;
+            _employee.PresentAdress = presentAddress_box.Text;
+            _employee.PermanentAddress = permanentAddress_box.Text;
+            _employee.EmailAddress = email_box.Text;
+            _employee.ContactNumber = contact_box.Text;
+            _employee.PoliceStation = policeStation_box.Text;
+            _employee.PoliceStationContactNumber = pscontact_box.Text;
+            _employee.FamilyPersonName = f_memberName_box.Text;
+            _employee.FamilyPersonNID = f_memberNID_box.Text;
+            _employee.FamilyPersonContactNumber = f_memberContact_box.Text;
+            _employee.FamilyPersonPoliceStation = f_memberPS_box.Text;
+            _employee.OfficeID = 0;
             int rfid = Int32.Parse(RFID_box.Text);
-            string previousOfficeID = "0";
+            _employee.PreviousOfficeID = "0";
 
             //int r=1;
 
@@ -204,48 +206,49 @@ namespace NavAppDesktopRegistration
             //string datetime = "'20161025'";
             //string connectionString = @"Data Source=DESKTOP-7FART4C\SQLEXPRESS;Initial Catalog=FInal_navy;Integrated Security=True";
             string connectionString = @"Data Source=DESKTOP-AG0F2UT\NASIF;Initial Catalog=FInal_navy;Integrated Security=True";
+            //string connectionString = @"Data Source=192.168.0.107,49170;Initial Catalog=FInal_navy ;User ID=sa;Password=sa;";
 
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
             SqlCommand cmd = new SqlCommand("emp_register", con);
             cmd.CommandType = CommandType.StoredProcedure;
             //SqlParameter prmName = 
-            cmd.Parameters.AddWithValue("@EmployeeName", employeeName);
-            cmd.Parameters.AddWithValue("@NationalID", nationalID);
-            cmd.Parameters.AddWithValue("@RankID", rank);
-            cmd.Parameters.AddWithValue("@DepartmentID", dept);
-            cmd.Parameters.AddWithValue("@BranchID", branch);
+            cmd.Parameters.AddWithValue("@EmployeeName", _employee.EmployeeName);
+            cmd.Parameters.AddWithValue("@NationalID", _employee.NationalID);
+            cmd.Parameters.AddWithValue("@RankID", _employee.RankID);
+            cmd.Parameters.AddWithValue("@DepartmentID", _employee.DepartmentID);
+            cmd.Parameters.AddWithValue("@BranchID", _employee.BranchID);
             cmd.Parameters.AddWithValue("@IssuedCardID", issuedcardID);
-            cmd.Parameters.AddWithValue("@DateOfBirth", dob);
-            cmd.Parameters.AddWithValue("@Height", height);
-            cmd.Parameters.AddWithValue("@BloodGroup", blood_Group);
-            cmd.Parameters.AddWithValue("@IdentificationMark", identification);
+            cmd.Parameters.AddWithValue("@DateOfBirth", _employee.DateOfBirth);
+            cmd.Parameters.AddWithValue("@Height", _employee.Height);
+            cmd.Parameters.AddWithValue("@BloodGroup", _employee.BloodGroup);
+            cmd.Parameters.AddWithValue("@IdentificationMark", _employee.IdentificationMark);
             cmd.Parameters.AddWithValue("@EmployeeSignatureFilePath", signature_box.Text);
             cmd.Parameters.AddWithValue("@AuthoritySignatureFilePath", signature_box.Text);
-            cmd.Parameters.AddWithValue("@AuthorizedBy", issuedcardID);
-            cmd.Parameters.AddWithValue("@AuthorizedDate", doj);
-            cmd.Parameters.AddWithValue("@DateOfIssue", doj);
-            cmd.Parameters.AddWithValue("@EmployersCategory", employer_catagory);
-            cmd.Parameters.AddWithValue("@DateOfRetirement", doj);
-            cmd.Parameters.AddWithValue("@DateOfJoining", doj);
-            cmd.Parameters.AddWithValue("@MaritalStatus", marital_status);
-            cmd.Parameters.AddWithValue("@PresentAddress", present_address);
-            cmd.Parameters.AddWithValue("@PermanentAddress", permanent_address);
-            cmd.Parameters.AddWithValue("@EmailAddress", email);
-            cmd.Parameters.AddWithValue("@ContactNumber", contact);
-            cmd.Parameters.AddWithValue("@PoliceStation", police_station);
-            cmd.Parameters.AddWithValue("@PoliceStationContactNumber", police_stationContact);
-            cmd.Parameters.AddWithValue("@FamilyPersonName", family_person_name);
-            cmd.Parameters.AddWithValue("@FamilyPersonNID", family_NID);
-            cmd.Parameters.AddWithValue("@FamilyPersonContactNumber", family_contact);
-            cmd.Parameters.AddWithValue("@FamilyPersonPoliceStation", family_PS);
-            cmd.Parameters.AddWithValue("@OfficeID", office_Id);
+            cmd.Parameters.AddWithValue("@AuthorizedBy", _currentUser.UserID);
+            cmd.Parameters.AddWithValue("@AuthorizedDate", DateTime.Now);
+            cmd.Parameters.AddWithValue("@DateOfIssue", DateTime.Now);
+            cmd.Parameters.AddWithValue("@EmployersCategory", _employee.EmployersCatagory);
+            cmd.Parameters.AddWithValue("@DateOfRetirement", _employee.DateOfRetirement);
+            cmd.Parameters.AddWithValue("@DateOfJoining", _employee.DateOfJoining);
+            cmd.Parameters.AddWithValue("@MaritalStatus", _employee.MaritalStatus);
+            cmd.Parameters.AddWithValue("@PresentAddress", _employee.PresentAdress);
+            cmd.Parameters.AddWithValue("@PermanentAddress", _employee.PermanentAddress);
+            cmd.Parameters.AddWithValue("@EmailAddress", _employee.EmailAddress);
+            cmd.Parameters.AddWithValue("@ContactNumber", _employee.ContactNumber);
+            cmd.Parameters.AddWithValue("@PoliceStation", _employee.PoliceStation);
+            cmd.Parameters.AddWithValue("@PoliceStationContactNumber", _employee.PoliceStationContactNumber);
+            cmd.Parameters.AddWithValue("@FamilyPersonName", _employee.FamilyPersonName);
+            cmd.Parameters.AddWithValue("@FamilyPersonNID", _employee.FamilyPersonNID);
+            cmd.Parameters.AddWithValue("@FamilyPersonContactNumber", _employee.FamilyPersonContactNumber);
+            cmd.Parameters.AddWithValue("@FamilyPersonPoliceStation", _employee.FamilyPersonPoliceStation);
+            cmd.Parameters.AddWithValue("@OfficeID", _employee.OfficeID);
             cmd.Parameters.AddWithValue("@CardID", rfid);
-            cmd.Parameters.AddWithValue("@PreviousOfficeIds", previousOfficeID);
-            cmd.Parameters.AddWithValue("@CreatedBy", office_Id);
-            cmd.Parameters.AddWithValue("@CreatedDate", datetime);
-            cmd.Parameters.AddWithValue("@ModifiedBy", office_Id);
-            cmd.Parameters.AddWithValue("@ModifiedDate", datetime);
+            cmd.Parameters.AddWithValue("@PreviousOfficeIds", _employee.PreviousOfficeID);
+            cmd.Parameters.AddWithValue("@CreatedBy", _currentUser.UserID);
+            cmd.Parameters.AddWithValue("@CreatedDate", DateTime.Now);
+            cmd.Parameters.AddWithValue("@ModifiedBy", null);
+            cmd.Parameters.AddWithValue("@ModifiedDate", null);
 
             SqlParameter prmID = new SqlParameter()
             {

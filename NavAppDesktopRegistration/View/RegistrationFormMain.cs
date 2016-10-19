@@ -158,7 +158,7 @@ namespace NavAppDesktopRegistration
             }          
             showHideUserInfo(false);
             //_branch = new BranchCreateView(_currentUser, _previousForm);
-            _branch.MdiParent = this;
+            //_branch.MdiParent = this;
             _branch.Show();
             _branch.FormClosed += showBasicUserInfo;
             

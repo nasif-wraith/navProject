@@ -9,7 +9,7 @@ namespace NavAppDesktopRegistration
     class BranchModel
     {
         public int BranchID { get; set; }
-        //public string BranchName { get; set; }
+        public string BranchName { get; set; }
         public string Address { get; set; }
         public string Contact { get; set; }
         //public int DepartmentID { get; set; }

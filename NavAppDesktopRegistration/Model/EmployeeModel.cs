@@ -10,7 +10,7 @@ namespace NavAppDesktopRegistration
     {
         public int EmployeeID { get; set; }
         public string EmployeeName { get; set; }
-        public int NationalID { get; set; }
+        public string NationalID { get; set; }
         public int RankID { get; set; }
         public int  DepartmentID { get; set; }
         public int BranchID { get; set; }
@@ -37,8 +37,11 @@ namespace NavAppDesktopRegistration
         public string FamilyPersonName { get; set; }
         public string FamilyPersonNID { get; set; }
         public string FamilyPersonContactNumber { get; set; }
+        public string FamilyPersonPoliceStation { get; set; }
+        public string EmployeeImagePath { get; set; }
+        public string FingerPrintPath { get; set; }
         public int OfficeID { get; set; }
-        public int PreviousOfficeID { get; set; }
+        public string PreviousOfficeID { get; set; }
         public int CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
         public int ModifiedBy { get; set; }

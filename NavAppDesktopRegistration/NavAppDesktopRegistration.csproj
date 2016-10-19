@@ -78,6 +78,7 @@
     <Compile Include="Helper\HelperEnums.cs" />
     <Compile Include="Helper\MenuMakeHelper.cs" />
     <Compile Include="Model\BranchModel.cs" />
+    <Compile Include="Model\CardModel.cs" />
     <Compile Include="Model\DepartmentModel.cs" />
     <Compile Include="Model\EmployeeModel.cs" />
     <Compile Include="Model\UserModel.cs" />
