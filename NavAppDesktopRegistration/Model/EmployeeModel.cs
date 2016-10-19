@@ -27,7 +27,7 @@ namespace NavAppDesktopRegistration
         public string EmployersCatagory { get; set; }
         public DateTime DateOfRetirement { get; set; }
         public DateTime DateOfJoining { get; set; }
-        public bool MaritalStatus { get; set; }
+        public int MaritalStatus { get; set; }
         public string PresentAdress { get; set; }
         public string PermanentAddress { get; set; }
         public string EmailAddress { get; set; }

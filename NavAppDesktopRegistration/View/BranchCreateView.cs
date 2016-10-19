@@ -56,8 +56,8 @@ namespace NavAppDesktopRegistration
             branchModel.Contact = txtContact.Text;
             //branchModel.DepartmentID = Int32.Parse(txtDepartmentID.Text);
 
-            string connectionString = @"Data Source=DESKTOP-AG0F2UT\NASIF;Initial Catalog=FInal_navy;Integrated Security=True";
-            //string connectionString = @"Data Source=192.168.0.107,49170;Initial Catalog=FInal_navy ;User ID=sa;Password=sa;Integrated Security=True";
+            //string connectionString = @"Data Source=DESKTOP-AG0F2UT\NASIF;Initial Catalog=FInal_navy;Integrated Security=True";
+            string connectionString = @"Data Source=192.168.0.107,49170;Initial Catalog=FInal_navy ;User ID=sa;Password=sa";
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
             SqlCommand cmd = new SqlCommand("Branch_in", con);
@@ -70,15 +70,16 @@ namespace NavAppDesktopRegistration
             cmd.Parameters.AddWithValue("@CreatedDate", DateTime.Now);
             cmd.Parameters.AddWithValue("@ModifiedBy", _currentUser.UserID);
             cmd.Parameters.AddWithValue("@ModifiedDate", DateTime.Now);
-            SqlParameter BranchId = new SqlParameter()
-            {
-                ParameterName = "@BranchID",
-                Value = -1,
-                Direction = ParameterDirection.ReturnValue
-            };
-            cmd.Parameters.Add(BranchId);
-
+            //SqlParameter BranchId = new SqlParameter()
+            //{
+            //    ParameterName = "@BranchID",
+            //    Value = -1,
+            //    Direction = ParameterDirection.Output
+            //};
+            //cmd.Parameters.Add(BranchId);
+            cmd.Parameters.Add("@BranchID", SqlDbType.Int).Direction = ParameterDirection.Output;
             cmd.ExecuteNonQuery();
+            int NewQuoteNumber = int.Parse(cmd.Parameters["@BranchID"].Value.ToString());
             con.Close();
 
         }

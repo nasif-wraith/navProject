@@ -809,6 +809,7 @@
             this.rankCombo.Name = "rankCombo";
             this.rankCombo.Size = new System.Drawing.Size(140, 24);
             this.rankCombo.TabIndex = 19;
+            this.rankCombo.SelectedIndexChanged += new System.EventHandler(this.rankCombo_SelectedIndexChanged);
             // 
             // label9
             // 

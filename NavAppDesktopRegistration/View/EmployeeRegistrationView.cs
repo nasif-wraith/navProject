@@ -66,7 +66,7 @@ namespace NavAppDesktopRegistration
 
         #region Private Method
 
-        void loadAllCombo(ComboBox combobox,Type enumType)
+        void loadAllCombo(ComboBox combobox,Type enumType)   ///akta helper class a rakhte hobe.
         {
             combobox.DataSource = Enum.GetValues(enumType).Cast<Enum>().Select(value => new
             {
@@ -205,8 +205,10 @@ namespace NavAppDesktopRegistration
             DateTime datetime = DateTime.Now;
             //string datetime = "'20161025'";
             //string connectionString = @"Data Source=DESKTOP-7FART4C\SQLEXPRESS;Initial Catalog=FInal_navy;Integrated Security=True";
-            string connectionString = @"Data Source=DESKTOP-AG0F2UT\NASIF;Initial Catalog=FInal_navy;Integrated Security=True";
-            //string connectionString = @"Data Source=192.168.0.107,49170;Initial Catalog=FInal_navy ;User ID=sa;Password=sa;";
+            //string connectionString = @"Data Source=DESKTOP-AG0F2UT\NASIF;Initial Catalog=FInal_navy;Integrated Security=True";
+           //try catch block create korte hobe
+            //DB helper class implement korte hobe
+            string connectionString = @"Data Source=192.168.0.107,49170;Initial Catalog=FInal_navy ;User ID=sa;Password=sa;";
 
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
@@ -263,6 +265,11 @@ namespace NavAppDesktopRegistration
             MessageBox.Show("everything is uploaded", "success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         #endregion
+
+        private void rankCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
         
     }
 }
