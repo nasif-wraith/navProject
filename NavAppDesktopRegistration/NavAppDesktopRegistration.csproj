@@ -75,6 +75,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DaHelper\DatabaseHelper.cs" />
+    <Compile Include="DaHelper\MainDatabaseHelper.cs" />
     <Compile Include="Helper\HelperEnums.cs" />
     <Compile Include="Helper\MenuMakeHelper.cs" />
     <Compile Include="Model\BranchModel.cs" />

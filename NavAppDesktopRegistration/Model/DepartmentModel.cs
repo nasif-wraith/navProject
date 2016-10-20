@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NavAppDesktopRegistration
 {
-    class DepartmentModel
+    public class DepartmentModel
     {
         public int DepartmentID { get; set; }
         public string DepartmentName { get; set; }

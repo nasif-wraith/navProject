@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NavAppDesktopRegistration.Model
 {
-    class CardModel
+    public class CardModel
     {
         public int MyProperty { get; set; }
     }
