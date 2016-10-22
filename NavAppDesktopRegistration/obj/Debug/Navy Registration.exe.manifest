@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Navy Registration.exe" size="1754112">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Navy Registration.exe" size="1758720">
       <assemblyIdentity name="Navy Registration" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SuD6Kci5Df+IGxUoDWkb8UYROSK1l+qP4XlsnIVWEoE=</dsig:DigestValue>
+        <dsig:DigestValue>gZs1tiXHmzgljBohF1kAZm8p1AWrFmASrPRmzuCsG2M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -72,13 +72,13 @@
       <dsig:DigestValue>S+nlcnrbraAqjI8wZsjIq5cepBvCpuae9Nfa2LMaELU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Navy Registration.exe.config" size="187">
+  <file name="Navy Registration.exe.config" size="182">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+      <dsig:DigestValue>PbQiHFOih9uz3RPvvsStiPKcsu3PE8/gyCn2QGUyyf4=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

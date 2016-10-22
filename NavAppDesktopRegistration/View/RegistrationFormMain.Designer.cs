@@ -165,26 +165,26 @@
             // UserAddMS
             // 
             this.UserAddMS.Name = "UserAddMS";
-            this.UserAddMS.Size = new System.Drawing.Size(152, 24);
+            this.UserAddMS.Size = new System.Drawing.Size(117, 24);
             this.UserAddMS.Text = "Add";
             this.UserAddMS.Click += new System.EventHandler(this.UserAddMS_Click);
             // 
             // editToolStripMenuItem2
             // 
             this.editToolStripMenuItem2.Name = "editToolStripMenuItem2";
-            this.editToolStripMenuItem2.Size = new System.Drawing.Size(152, 24);
+            this.editToolStripMenuItem2.Size = new System.Drawing.Size(117, 24);
             this.editToolStripMenuItem2.Text = "Edit";
             // 
             // deleteToolStripMenuItem1
             // 
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(117, 24);
             this.deleteToolStripMenuItem1.Text = "Delete";
             // 
             // profileToolStripMenuItem1
             // 
             this.profileToolStripMenuItem1.Name = "profileToolStripMenuItem1";
-            this.profileToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.profileToolStripMenuItem1.Size = new System.Drawing.Size(117, 24);
             this.profileToolStripMenuItem1.Text = "Profile";
             // 
             // rankToolStripMenuItem
@@ -200,20 +200,20 @@
             // RankAddMS
             // 
             this.RankAddMS.Name = "RankAddMS";
-            this.RankAddMS.Size = new System.Drawing.Size(152, 24);
+            this.RankAddMS.Size = new System.Drawing.Size(117, 24);
             this.RankAddMS.Text = "Add";
             this.RankAddMS.Click += new System.EventHandler(this.RankAddMS_Click);
             // 
             // editToolStripMenuItem3
             // 
             this.editToolStripMenuItem3.Name = "editToolStripMenuItem3";
-            this.editToolStripMenuItem3.Size = new System.Drawing.Size(152, 24);
+            this.editToolStripMenuItem3.Size = new System.Drawing.Size(117, 24);
             this.editToolStripMenuItem3.Text = "Edit";
             // 
             // deleteToolStripMenuItem2
             // 
             this.deleteToolStripMenuItem2.Name = "deleteToolStripMenuItem2";
-            this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(152, 24);
+            this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(117, 24);
             this.deleteToolStripMenuItem2.Text = "Delete";
             // 
             // brnahcToolStripMenuItem
@@ -238,6 +238,7 @@
             this.editToolStripMenuItem4.Name = "editToolStripMenuItem4";
             this.editToolStripMenuItem4.Size = new System.Drawing.Size(152, 24);
             this.editToolStripMenuItem4.Text = "Edit";
+            this.editToolStripMenuItem4.Click += new System.EventHandler(this.editToolStripMenuItem4_Click);
             // 
             // deleteToolStripMenuItem3
             // 

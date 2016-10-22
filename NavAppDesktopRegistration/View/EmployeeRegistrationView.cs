@@ -168,8 +168,7 @@ namespace NavAppDesktopRegistration
             _employee.EmployeeSignatureFilePath = _signaturePath;
             _employee.FingerPrintPath = _fingerprintPath;
             _employee.EmployeeImagePath = _picturePath;
-
-            
+            _employee.PersonnelNo = Int32.Parse(tbPersonnelNo.Text);
             //dummy var
             _employee.IssuedCardID = 1;
                        

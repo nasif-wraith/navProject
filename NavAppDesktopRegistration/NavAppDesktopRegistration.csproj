@@ -90,6 +90,12 @@
     <Compile Include="View\BranchCreateView.Designer.cs">
       <DependentUpon>BranchCreateView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\BranchUpdateView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BranchUpdateView.Designer.cs">
+      <DependentUpon>BranchUpdateView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\DepartmentCreateView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </Compile>
     <EmbeddedResource Include="View\BranchCreateView.resx">
       <DependentUpon>BranchCreateView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BranchUpdateView.resx">
+      <DependentUpon>BranchUpdateView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\DepartmentCreateView.resx">
       <DependentUpon>DepartmentCreateView.cs</DependentUpon>

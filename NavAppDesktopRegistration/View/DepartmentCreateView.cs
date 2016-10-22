@@ -16,6 +16,7 @@ namespace NavAppDesktopRegistration
         #region private fields
         private UserModel _currentUser;
         private Form _prevForm;
+        DatabaseHelper dbHelper;
         //private static DepartmentCreateView instance;
         #endregion
 
@@ -53,6 +54,7 @@ namespace NavAppDesktopRegistration
         #region event or callback
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            dbHelper = new DatabaseHelper();
             DepartmentModel dept = new DepartmentModel();
             dept.DepartmentName = txtDepartmentName.Text;
             dept.CreatedBy = _currentUser.UserID;
@@ -61,23 +63,8 @@ namespace NavAppDesktopRegistration
             dept.ModifiedDate = DateTime.Now;
             string connectionString = @"Data Source=DESKTOP-AG0F2UT\NASIF;Initial Catalog=FInal_navy;Integrated Security=True";
             SqlConnection con = new SqlConnection(connectionString);
-            con.Open();
-            SqlCommand cmd = new SqlCommand("Department_in", con);
-            cmd.Parameters.AddWithValue("@DepartmentName", dept.DepartmentName);
-            cmd.Parameters.AddWithValue("@CreatedBy", _currentUser.UserID);
-            cmd.Parameters.AddWithValue("@CreatedDate", DateTime.Now);
-            cmd.Parameters.AddWithValue("@ModifiedBy", _currentUser.UserID);
-            cmd.Parameters.AddWithValue("@ModifiedDate", DateTime.Now);
-            SqlParameter DepartmentID = new SqlParameter()
-            {
-                ParameterName = "@DepartmentID",
-                Value = -1,
-                Direction = ParameterDirection.Output
-            };
-            cmd.Parameters.Add(DepartmentID);
-
-            cmd.ExecuteNonQuery();
-            con.Close();
+            int DepartmentID = dbHelper.InsertIntoDepartment(dept,_currentUser);
+            MessageBox.Show("new Department Created.\nDepartment ID : " + DepartmentID, "Success", MessageBoxButtons.OK);
         }
         #endregion
     }

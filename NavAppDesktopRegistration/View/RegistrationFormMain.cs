@@ -19,6 +19,7 @@ namespace NavAppDesktopRegistration
         private UserAdd _userAdd;
         private Rank _rank ;
         private BranchCreateView _branch;
+        private BranchUpdateView _updateBranch;
         private DepartmentCreateView _dept;
         #endregion
 
@@ -44,6 +45,7 @@ namespace NavAppDesktopRegistration
             _rank = new Rank(_currentUser,_previousForm);
             _branch = new BranchCreateView(_currentUser, _previousForm);
             _dept = new DepartmentCreateView(_currentUser, _previousForm);
+            _updateBranch = new BranchUpdateView(_currentUser, _previousForm);
         }
         #endregion
 
@@ -81,6 +83,29 @@ namespace NavAppDesktopRegistration
                 CenterPictureBox.Visible = isShow;
             }
 
+      }
+        void hideotherforms()
+        {
+            if (_branch != null)
+            {
+                _branch.Hide();
+            }
+            if (_userAdd != null)
+            {
+                _userAdd.Hide();
+            }
+            if (_dept != null)
+            {
+                _dept.Hide();
+            }
+            if (_employeeRegistrationView != null)
+            {
+                _employeeRegistrationView.Hide();
+            }
+            if (_updateBranch !=  null)
+            {
+                _updateBranch.Hide();
+            }
         }
         #endregion
 
@@ -115,24 +140,9 @@ namespace NavAppDesktopRegistration
         #region one instance will open methods
         private void RankAddMS_Click(object sender, EventArgs e)
         {
-            if (_branch != null)
-            {
-                _branch.Hide();
-            }
-            if (_userAdd != null)
-            {
-                _userAdd.Hide();
-            }
-            if (_dept != null)
-            {
-                _dept.Hide();
-            }
-            if (_employeeRegistrationView != null)
-            {
-                _employeeRegistrationView.Hide();
-            }
+            hideotherforms();
             showHideUserInfo(false);
-            //_rank = new Rank(_currentUser, _previousForm);
+            _rank = new Rank(_currentUser, _previousForm);
             _rank.MdiParent = this;
             _rank.Show();
             _rank.FormClosed += showBasicUserInfo;
@@ -140,108 +150,56 @@ namespace NavAppDesktopRegistration
         }
         private void BranchAddMS_Click(object sender, EventArgs e)
         {
-            if (_rank != null)
-            {
-                _rank.Hide();
-            }
-            if (_userAdd != null)
-            {
-                _userAdd.Hide();
-            }
-            if (_dept != null)
-            {
-                _dept.Hide();
-            }
-            if (_employeeRegistrationView != null)
-            {
-                _employeeRegistrationView.Hide();
-            }          
+            hideotherforms();
             showHideUserInfo(false);
-            //_branch = new BranchCreateView(_currentUser, _previousForm);
-            //_branch.MdiParent = this;
+            _branch = new BranchCreateView(_currentUser, _previousForm);
+            _branch.MdiParent = this;
             _branch.Show();
             _branch.FormClosed += showBasicUserInfo;
-            
+
         }
         private void EmployeeAddMS_Click(object sender, EventArgs e)
         {
-            
+            hideotherforms();
             showHideUserInfo(false);
-            //_employeeRegistrationView = new EmployeeRegistrationView(_currentUser,_previousForm);
+            _employeeRegistrationView = new EmployeeRegistrationView(_currentUser,_previousForm);
             // Set the Parent Form of the Child window.
             _employeeRegistrationView.MdiParent = this;
             // Display the new form.
             _employeeRegistrationView.Show();
             _employeeRegistrationView.FormClosed += showBasicUserInfo;
-            if (_rank!=null)
-            {
-                _rank.Hide();
-            }
-            if (_userAdd != null)
-            {
-                _userAdd.Hide();
-            }
-            if (_dept != null)
-            {
-                _dept.Hide();
-            }
-            if (_branch !=null)
-            {
-                _branch.Hide();
-            }
-            
+                    
         }
         private void AddDepartmentMS_Click(object sender, EventArgs e)
         {
-            if (_branch != null)
-            {
-                _branch.Hide();
-            }
-            if (_userAdd != null)
-            {
-                _userAdd.Hide();
-            }
-            if (_rank != null)
-            {
-                _rank.Hide();
-            }
-            if (_employeeRegistrationView != null)
-            {
-                _branch.Hide();
-            }
+            hideotherforms();
             showHideUserInfo(false);
-            //_dept = new DepartmentCreateView(_currentUser, _previousForm);
+            _dept = new DepartmentCreateView(_currentUser, _previousForm);
             _dept.MdiParent = this;
             _dept.Show();
             _dept.FormClosed += showBasicUserInfo;
         }
         private void UserAddMS_Click(object sender, EventArgs e)
         {
-            if (_branch != null)
-            {
-                _branch.Hide();
-            }
-            if (_rank != null)
-            {
-                _rank.Hide();
-            }
-            if (_dept != null)
-            {
-                _dept.Hide();
-            }
-            if (_employeeRegistrationView != null)
-            {
-                _employeeRegistrationView.Hide();
-            }
+            hideotherforms();
             showHideUserInfo(false);
 
-            //_userAdd = new UserAdd(_currentUser, _previousForm);
+            _userAdd = new UserAdd(_currentUser, _previousForm);
             _userAdd.MdiParent = this;
             _userAdd.Show();
             _userAdd.FormClosed += showBasicUserInfo;
         }
+
         #endregion
 
-      
+        private void editToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            hideotherforms();
+            showHideUserInfo(false);
+            _updateBranch = new BranchUpdateView(_currentUser, _previousForm);
+            _updateBranch.MdiParent = this;
+            _updateBranch.Show();
+            _updateBranch.FormClosed += showBasicUserInfo;
+        }
     }
 }
