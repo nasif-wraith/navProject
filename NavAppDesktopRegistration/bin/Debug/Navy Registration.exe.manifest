@@ -43,14 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Navy Registration.exe" size="1758720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Navy Registration.exe" size="1789952">
       <assemblyIdentity name="Navy Registration" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gZs1tiXHmzgljBohF1kAZm8p1AWrFmASrPRmzuCsG2M=</dsig:DigestValue>
+        <dsig:DigestValue>+N1/3PCroXmxGS6Zujm6ONVN7f0qVCmLCmMSIjfBFdk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VBTablet.dll" size="98304">
+      <assemblyIdentity name="VBTablet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6Of4+Sdv0bIHFwS1+rz+ksMKkqJMgez1g7cU5T5KTFo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

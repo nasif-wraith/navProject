@@ -84,7 +84,7 @@ namespace NavAppDesktopRegistration
             //DateTime.MinValue = rngMin;
             
             MDBHelper = new MainDatabaseHelper();
-            SqlDateTime datetimeNow = DateTime.Now;
+            DateTime datetimeNow = DateTime.Now.Date;
             MessageBox.Show(""  + datetimeNow);
             SqlCommand cmd = new SqlCommand("InsertEmployee");
             cmd.CommandType = CommandType.StoredProcedure;
@@ -101,10 +101,10 @@ namespace NavAppDesktopRegistration
             cmd.Parameters.AddWithValue("@EmployeeSignatureFilePath", _employee.EmployeeSignatureFilePath);
             //cmd.Parameters.AddWithValue("@AuthoritySignatureFilePath", _employee.AuthoritySignatureFilePath);
             cmd.Parameters.AddWithValue("@AuthorizedBy", _currentUser.UserID);
-            cmd.Parameters.Add("@AuthorizedDate", SqlDbType.DateTime);
-            cmd.Parameters.Add("@DateOfIssue", SqlDbType.DateTime);
-            cmd.Parameters["@AuthorizedDate"].Value = datetimeNow;
-            cmd.Parameters["@DateOfIssue"].Value = datetimeNow;
+            cmd.Parameters.Add("@AuthorizedDate", SqlDbType.DateTime).Value = _employee.AuthorizedDate;
+            cmd.Parameters.Add("@DateOfIssue", SqlDbType.DateTime).Value = _employee.DateOfIssue;
+            //cmd.Parameters["@AuthorizedDate"].Value = datetimeNow;
+            //cmd.Parameters["@DateOfIssue"].Value = datetimeNow;
             cmd.Parameters.AddWithValue("@EmployersCategory", _employee.EmployersCatagory);
             cmd.Parameters.AddWithValue("@DateOfRetirement", _employee.DateOfRetirement);
             cmd.Parameters.AddWithValue("@DateOfJoining", _employee.DateOfJoining);
@@ -123,11 +123,11 @@ namespace NavAppDesktopRegistration
             cmd.Parameters.AddWithValue("@CardID", _employee.Rfid);
             cmd.Parameters.AddWithValue("@PreviousOfficeIds", _employee.PreviousOfficeID);
             cmd.Parameters.AddWithValue("@CreatedBy", _currentUser.UserID);
-            cmd.Parameters.Add("@CreatedDate", SqlDbType.DateTime);
-            cmd.Parameters["@CreatedDate"].Value = datetimeNow;
+            cmd.Parameters.Add("@CreatedDate", SqlDbType.DateTime).Value = _employee.CreatedDate;
+            //cmd.Parameters["@CreatedDate"].Value = datetimeNow;
            // cmd.Parameters.AddWithValue("@CreatedDate", datetimeNow);
             cmd.Parameters.AddWithValue("@ModifiedBy", null);
-            cmd.Parameters.AddWithValue("@ModifiedDate", null);
+            cmd.Parameters.AddWithValue("@ModifiedDate", _employee.ModifiedDate);
             cmd.Parameters.Add("@EmployeeID", SqlDbType.Int).Direction = ParameterDirection.Output;
             int EmployeeID = MDBHelper.RunQuerryInEmployee(cmd);
             return _employee.EmployeeID;

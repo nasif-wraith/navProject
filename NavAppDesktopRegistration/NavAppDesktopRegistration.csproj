@@ -63,6 +63,10 @@
     <ApplicationIcon>Logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Interop.DxVBLib">
+      <HintPath>..\..\..\..\Desktop\DigitizerInterface\DigitizerInterface\Interop.DxVBLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,6 +77,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="VBTablet">
+      <HintPath>..\..\..\..\Desktop\DigitizerInterface\DigitizerInterface\VBTablet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DaHelper\DatabaseHelper.cs" />
@@ -134,6 +141,12 @@
     <Compile Include="View\RegistrationFormMain.Designer.cs">
       <DependentUpon>RegistrationFormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\signaturePadView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\signaturePadView.Designer.cs">
+      <DependentUpon>signaturePadView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UserAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\RegistrationFormMain.resx">
       <DependentUpon>RegistrationFormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\signaturePadView.resx">
+      <DependentUpon>signaturePadView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UserAdd.resx">
       <DependentUpon>UserAdd.cs</DependentUpon>

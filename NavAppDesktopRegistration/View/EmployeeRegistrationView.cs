@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Data.SqlClient;
+using VBTablet;
 
 namespace NavAppDesktopRegistration
 {
@@ -23,6 +24,7 @@ namespace NavAppDesktopRegistration
         private string _picturePath;
         private string _fingerprintPath;
         private Form _previousForm;
+        private signaturePadView _signature;
        
         #endregion
 
@@ -39,26 +41,14 @@ namespace NavAppDesktopRegistration
             loadAllCombo(rankCombo, typeof(RanksEnum));
             loadAllCombo(bloodGrpCombo, typeof(BloodGroupEnum));
             loadAllCombo(maritalStatus_combo, typeof(MarriedEnum));
+            _signature = new signaturePadView();
             
         }
         #endregion
 
         #region public methods
 
-        //public static EmployeeRegistrationView Instance
-        //{
-        //    get
-        //    {
-        //        lock (padlock)
-        //        {
-        //            if (instance == null)
-        //            {
-        //                instance = new EmployeeRegistrationView();
-        //            }
-        //            return instance;
-        //        }
-        //    }
-        //}
+
 
         #endregion
 
@@ -88,17 +78,18 @@ namespace NavAppDesktopRegistration
         #region private events or callback
         private void signature_btn_Click(object sender, EventArgs e)
         {
-            OpenFileDialog pic = new OpenFileDialog();
-            if (pic.ShowDialog() == DialogResult.OK)
-            {
-                // pictureBox1.Image = Image.FromFile(pic.FileName);
-                signature_pictureBox.Load(pic.FileName);
-                signature_pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                //textBox1.Text = pic.FileName;
-                signature_box.Text = pic.FileName;
-                _signaturePath = pic.FileName;
-                
-            }
+            _signature.Show();
+            //OpenFileDialog pic = new OpenFileDialog();
+            //if (pic.ShowDialog() == DialogResult.OK)
+            //{
+            //    // pictureBox1.Image = Image.FromFile(pic.FileName);
+            //    signature_pictureBox.Load(pic.FileName);
+            //    signature_pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            //    //textBox1.Text = pic.FileName;
+            //    signature_box.Text = pic.FileName;
+            //    _signaturePath = pic.FileName;
+            //}
+
         }
 
         private void picture_btn_Click(object sender, EventArgs e)
@@ -169,6 +160,10 @@ namespace NavAppDesktopRegistration
             _employee.FingerPrintPath = _fingerprintPath;
             _employee.EmployeeImagePath = _picturePath;
             _employee.PersonnelNo = Int32.Parse(tbPersonnelNo.Text);
+            _employee.CreatedDate = DateTime.Now;
+            _employee.ModifiedDate = DateTime.Now;
+            _employee.AuthorizedDate = DateTime.Now;
+            _employee.DateOfIssue = DateTime.Now;
             //dummy var
             _employee.IssuedCardID = 1;
                        
@@ -182,6 +177,16 @@ namespace NavAppDesktopRegistration
         {
 
         }
-        
+
+
+
+        #region signature pad codes
+       
+        #endregion
+
+
+
+
+
     }
 }

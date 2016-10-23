@@ -14,7 +14,7 @@ namespace NavAppDesktopRegistration
         string connection()
         {
             //string connectionString = @"Data Source=192.168.0.102,49170;Initial Catalog=FInal_navy ;User ID=sa;Password=sa";
-            string connectionString = @"Data Source=.;Initial Catalog=beta;Integrated Security=True";
+            string connectionString = @"Data Source=.;Initial Catalog=beta_2;Integrated Security=True";
             return connectionString;
         }
         
