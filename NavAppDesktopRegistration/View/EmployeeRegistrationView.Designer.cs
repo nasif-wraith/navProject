@@ -323,11 +323,11 @@
             // label28
             // 
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(21, 323);
+            this.label28.Location = new System.Drawing.Point(52, 322);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(100, 20);
+            this.label28.Size = new System.Drawing.Size(69, 21);
             this.label28.TabIndex = 35;
-            this.label28.Text = "Chip ID : ";
+            this.label28.Text = "Chip ID   : ";
             // 
             // label27
             // 
@@ -546,11 +546,11 @@
             this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(15, 102);
+            this.label22.Location = new System.Drawing.Point(1, 103);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(163, 20);
             this.label22.TabIndex = 24;
-            this.label22.Text = "Family Member Contact";
+            this.label22.Text = "Family Member Contact   :";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label21
@@ -570,11 +570,11 @@
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(15, 37);
+            this.label20.Location = new System.Drawing.Point(6, 40);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(163, 20);
             this.label20.TabIndex = 22;
-            this.label20.Text = "Family Member Name:";
+            this.label20.Text = "Family Member Name   :";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PersonalgroupBox
@@ -673,8 +673,6 @@
             // 
             // label18
             // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(319, 563);
             this.label18.Name = "label18";
@@ -695,11 +693,10 @@
             // 
             // contact_box
             // 
-            this.contact_box.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.contact_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.contact_box.Location = new System.Drawing.Point(111, 516);
             this.contact_box.Name = "contact_box";
-            this.contact_box.Size = new System.Drawing.Size(175, 23);
+            this.contact_box.Size = new System.Drawing.Size(182, 23);
             this.contact_box.TabIndex = 34;
             // 
             // identificationMark_box
@@ -806,9 +803,9 @@
             // branch_combo
             // 
             this.branch_combo.FormattingEnabled = true;
-            this.branch_combo.Location = new System.Drawing.Point(486, 97);
+            this.branch_combo.Location = new System.Drawing.Point(474, 97);
             this.branch_combo.Name = "branch_combo";
-            this.branch_combo.Size = new System.Drawing.Size(95, 24);
+            this.branch_combo.Size = new System.Drawing.Size(102, 24);
             this.branch_combo.TabIndex = 23;
             // 
             // dept_combo
@@ -822,7 +819,7 @@
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(406, 101);
+            this.label11.Location = new System.Drawing.Point(397, 102);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 20);
             this.label11.TabIndex = 21;
@@ -853,7 +850,7 @@
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(312, 200);
+            this.label9.Location = new System.Drawing.Point(319, 200);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(71, 35);
             this.label9.TabIndex = 18;
@@ -873,12 +870,13 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(7, 413);
+            this.label7.Location = new System.Drawing.Point(20, 407);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 42);
             this.label7.TabIndex = 17;
             this.label7.Text = "Date of Joining :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // maritalStatus_combo
             // 
