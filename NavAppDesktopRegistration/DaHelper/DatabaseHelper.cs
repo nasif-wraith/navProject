@@ -84,17 +84,15 @@ namespace NavAppDesktopRegistration
             //DateTime.MinValue = rngMin;
             
             MDBHelper = new MainDatabaseHelper();
-            DateTime datetimeNow = DateTime.Now.Date;
-            MessageBox.Show(""  + datetimeNow);
+            DateTime datetimeNow = DateTime.Now;
+            //MessageBox.Show(""  + datetimeNow);
             SqlCommand cmd = new SqlCommand("InsertEmployee");
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@EmployeeName", _employee.EmployeeName);
-            cmd.Parameters.AddWithValue("@NationalID", _employee.NationalID);
             cmd.Parameters.AddWithValue("@RankID", _employee.RankID);
             cmd.Parameters.AddWithValue("@DepartmentID", _employee.DepartmentID);
             cmd.Parameters.AddWithValue("@BranchID", _employee.BranchID);
             cmd.Parameters.AddWithValue("@IssuedCardID", _employee.IssuedCardID);
-            cmd.Parameters.AddWithValue("@DateOfBirth", _employee.DateOfBirth);
             cmd.Parameters.AddWithValue("@Height", _employee.Height);
             cmd.Parameters.AddWithValue("@BloodGroup", _employee.BloodGroup);
             cmd.Parameters.AddWithValue("@IdentificationMark", _employee.IdentificationMark);
@@ -103,8 +101,6 @@ namespace NavAppDesktopRegistration
             cmd.Parameters.AddWithValue("@AuthorizedBy", _currentUser.UserID);
             cmd.Parameters.Add("@AuthorizedDate", SqlDbType.DateTime).Value = _employee.AuthorizedDate;
             cmd.Parameters.Add("@DateOfIssue", SqlDbType.DateTime).Value = _employee.DateOfIssue;
-            //cmd.Parameters["@AuthorizedDate"].Value = datetimeNow;
-            //cmd.Parameters["@DateOfIssue"].Value = datetimeNow;
             cmd.Parameters.AddWithValue("@EmployersCategory", _employee.EmployersCatagory);
             cmd.Parameters.AddWithValue("@DateOfRetirement", _employee.DateOfRetirement);
             cmd.Parameters.AddWithValue("@DateOfJoining", _employee.DateOfJoining);
@@ -120,17 +116,37 @@ namespace NavAppDesktopRegistration
             cmd.Parameters.AddWithValue("@FamilyPersonContactNumber", _employee.FamilyPersonContactNumber);
             cmd.Parameters.AddWithValue("@FamilyPersonPoliceStation", _employee.FamilyPersonPoliceStation);
             cmd.Parameters.AddWithValue("@OfficeID", _employee.OfficeID);
-            cmd.Parameters.AddWithValue("@CardID", _employee.Rfid);
             cmd.Parameters.AddWithValue("@PreviousOfficeIds", _employee.PreviousOfficeID);
             cmd.Parameters.AddWithValue("@CreatedBy", _currentUser.UserID);
             cmd.Parameters.Add("@CreatedDate", SqlDbType.DateTime).Value = _employee.CreatedDate;
-            //cmd.Parameters["@CreatedDate"].Value = datetimeNow;
-           // cmd.Parameters.AddWithValue("@CreatedDate", datetimeNow);
-            cmd.Parameters.AddWithValue("@ModifiedBy", null);
-            cmd.Parameters.AddWithValue("@ModifiedDate", _employee.ModifiedDate);
+            cmd.Parameters.AddWithValue("@ModifiedBy", _currentUser.UserID);
+            cmd.Parameters.AddWithValue("@ModifiedDate", DateTime.Now);
+            cmd.Parameters.AddWithValue("@PersonalNo", _employee.PersonalNo);
+            cmd.Parameters.AddWithValue("@DateOfBirth", _employee.DateOfBirth);
+            cmd.Parameters.AddWithValue("@imagePath", _employee.EmployeeImagePath);
+            cmd.Parameters.AddWithValue("@CardID", _employee.Rfid);
+            cmd.Parameters.AddWithValue("@NationalID", _employee.NationalID);
+            cmd.Parameters.AddWithValue("@FingerPrintPath", _employee.FingerPrintPath);
+            cmd.Parameters.AddWithValue("@RfID", _employee.Rfid);
             cmd.Parameters.Add("@EmployeeID", SqlDbType.Int).Direction = ParameterDirection.Output;
             int EmployeeID = MDBHelper.RunQuerryInEmployee(cmd);
             return _employee.EmployeeID;
+
+
+
+
+
+            //cmd.Parameters["@AuthorizedDate"].Value = datetimeNow;
+            //cmd.Parameters["@DateOfIssue"].Value = datetimeNow;
+
+
+
+
+
+            //cmd.Parameters["@CreatedDate"].Value = datetimeNow;
+            // cmd.Parameters.AddWithValue("@CreatedDate", datetimeNow);
+
+
         }
         #endregion
 

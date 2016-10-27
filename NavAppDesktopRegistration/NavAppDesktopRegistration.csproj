@@ -90,6 +90,7 @@
     <Compile Include="Model\CardModel.cs" />
     <Compile Include="Model\DepartmentModel.cs" />
     <Compile Include="Model\EmployeeModel.cs" />
+    <Compile Include="Model\RankModel.cs" />
     <Compile Include="Model\UserModel.cs" />
     <Compile Include="View\BranchCreateView.cs">
       <SubType>Form</SubType>
@@ -250,6 +251,10 @@
     <Resource Include="Images\Logo.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <None Include="bin\Debug\Images\whiteBG.jpg" />
+    <Content Include="Images\whiteBG.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\propic.png" />
     <Content Include="Logo.ico" />
   </ItemGroup>

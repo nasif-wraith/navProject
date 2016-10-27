@@ -53,13 +53,14 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(456, 224);
+            this.groupBox1.Size = new System.Drawing.Size(475, 224);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Rank";
             // 
             // closeBtn
             // 
+            this.closeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.closeBtn.BackColor = System.Drawing.Color.Silver;
             this.closeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.closeBtn.ForeColor = System.Drawing.Color.Black;
@@ -72,6 +73,8 @@
             // 
             // resetRank
             // 
+            this.resetRank.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.resetRank.BackColor = System.Drawing.Color.Silver;
             this.resetRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.resetRank.ForeColor = System.Drawing.Color.Black;
@@ -84,6 +87,7 @@
             // 
             // addRank
             // 
+            this.addRank.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.addRank.BackColor = System.Drawing.Color.Silver;
             this.addRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.addRank.ForeColor = System.Drawing.Color.Black;
@@ -93,9 +97,12 @@
             this.addRank.TabIndex = 6;
             this.addRank.Text = "Add";
             this.addRank.UseVisualStyleBackColor = false;
+            this.addRank.Click += new System.EventHandler(this.addRank_Click);
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(130, 95);
@@ -105,6 +112,8 @@
             // 
             // RankNameTB
             // 
+            this.RankNameTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.RankNameTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RankNameTB.Location = new System.Drawing.Point(130, 56);
             this.RankNameTB.Name = "RankNameTB";

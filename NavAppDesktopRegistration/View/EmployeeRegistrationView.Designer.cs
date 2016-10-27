@@ -48,6 +48,8 @@
             this.label27 = new System.Windows.Forms.Label();
             this.finger_btn = new System.Windows.Forms.Button();
             this.picture_btn = new System.Windows.Forms.Button();
+            this.pickFingerPrint = new System.Windows.Forms.Button();
+            this.Pickbtn = new System.Windows.Forms.Button();
             this.signature_btn = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -88,8 +90,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.rankCombo = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.maritalStatus_combo = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.doj_datetimepicker = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
@@ -99,10 +103,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.nationalId_box = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.text_name = new System.Windows.Forms.TextBox();
             this.lblPersonalNo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tbPersonnelNo = new System.Windows.Forms.TextBox();
+            this.text_name = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.finger_pictureBox)).BeginInit();
@@ -192,6 +196,8 @@
             this.groupBox5.Controls.Add(this.label27);
             this.groupBox5.Controls.Add(this.finger_btn);
             this.groupBox5.Controls.Add(this.picture_btn);
+            this.groupBox5.Controls.Add(this.pickFingerPrint);
+            this.groupBox5.Controls.Add(this.Pickbtn);
             this.groupBox5.Controls.Add(this.signature_btn);
             this.groupBox5.Controls.Add(this.label26);
             this.groupBox5.Controls.Add(this.label25);
@@ -340,7 +346,7 @@
             this.finger_btn.ForeColor = System.Drawing.Color.Black;
             this.finger_btn.Location = new System.Drawing.Point(436, 211);
             this.finger_btn.Name = "finger_btn";
-            this.finger_btn.Size = new System.Drawing.Size(160, 26);
+            this.finger_btn.Size = new System.Drawing.Size(129, 26);
             this.finger_btn.TabIndex = 29;
             this.finger_btn.Text = "Take FirngerPrint";
             this.finger_btn.UseVisualStyleBackColor = false;
@@ -360,6 +366,34 @@
             this.picture_btn.UseVisualStyleBackColor = false;
             this.picture_btn.Click += new System.EventHandler(this.picture_btn_Click);
             // 
+            // pickFingerPrint
+            // 
+            this.pickFingerPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pickFingerPrint.BackColor = System.Drawing.Color.Silver;
+            this.pickFingerPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.pickFingerPrint.ForeColor = System.Drawing.Color.Black;
+            this.pickFingerPrint.Location = new System.Drawing.Point(567, 211);
+            this.pickFingerPrint.Name = "pickFingerPrint";
+            this.pickFingerPrint.Size = new System.Drawing.Size(29, 26);
+            this.pickFingerPrint.TabIndex = 29;
+            this.pickFingerPrint.Text = "...";
+            this.pickFingerPrint.UseVisualStyleBackColor = false;
+            this.pickFingerPrint.Click += new System.EventHandler(this.pickFingerPrint_Click);
+            // 
+            // Pickbtn
+            // 
+            this.Pickbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pickbtn.BackColor = System.Drawing.Color.Silver;
+            this.Pickbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Pickbtn.ForeColor = System.Drawing.Color.Black;
+            this.Pickbtn.Location = new System.Drawing.Point(149, 211);
+            this.Pickbtn.Name = "Pickbtn";
+            this.Pickbtn.Size = new System.Drawing.Size(29, 26);
+            this.Pickbtn.TabIndex = 29;
+            this.Pickbtn.Text = "...";
+            this.Pickbtn.UseVisualStyleBackColor = false;
+            this.Pickbtn.Click += new System.EventHandler(this.Pickbtn_Click);
+            // 
             // signature_btn
             // 
             this.signature_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -368,7 +402,7 @@
             this.signature_btn.ForeColor = System.Drawing.Color.Black;
             this.signature_btn.Location = new System.Drawing.Point(18, 211);
             this.signature_btn.Name = "signature_btn";
-            this.signature_btn.Size = new System.Drawing.Size(160, 26);
+            this.signature_btn.Size = new System.Drawing.Size(125, 26);
             this.signature_btn.TabIndex = 29;
             this.signature_btn.Text = "Take Signature ";
             this.signature_btn.UseVisualStyleBackColor = false;
@@ -572,8 +606,10 @@
             this.PersonalgroupBox.Controls.Add(this.label10);
             this.PersonalgroupBox.Controls.Add(this.rankCombo);
             this.PersonalgroupBox.Controls.Add(this.label9);
+            this.PersonalgroupBox.Controls.Add(this.label16);
             this.PersonalgroupBox.Controls.Add(this.label7);
             this.PersonalgroupBox.Controls.Add(this.maritalStatus_combo);
+            this.PersonalgroupBox.Controls.Add(this.dateTimePicker1);
             this.PersonalgroupBox.Controls.Add(this.label8);
             this.PersonalgroupBox.Controls.Add(this.doj_datetimepicker);
             this.PersonalgroupBox.Controls.Add(this.label6);
@@ -589,7 +625,7 @@
             this.PersonalgroupBox.Controls.Add(this.text_name);
             this.PersonalgroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.PersonalgroupBox.ForeColor = System.Drawing.Color.White;
-            this.PersonalgroupBox.Location = new System.Drawing.Point(11, 34);
+            this.PersonalgroupBox.Location = new System.Drawing.Point(12, 34);
             this.PersonalgroupBox.Name = "PersonalgroupBox";
             this.PersonalgroupBox.Size = new System.Drawing.Size(601, 626);
             this.PersonalgroupBox.TabIndex = 1;
@@ -601,7 +637,7 @@
             this.EmployeesCatagory_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmployeesCatagory_box.FormattingEnabled = true;
-            this.EmployeesCatagory_box.Location = new System.Drawing.Point(400, 467);
+            this.EmployeesCatagory_box.Location = new System.Drawing.Point(400, 382);
             this.EmployeesCatagory_box.Name = "EmployeesCatagory_box";
             this.EmployeesCatagory_box.Size = new System.Drawing.Size(185, 24);
             this.EmployeesCatagory_box.TabIndex = 42;
@@ -609,7 +645,7 @@
             // label19
             // 
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(312, 461);
+            this.label19.Location = new System.Drawing.Point(312, 376);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(71, 35);
             this.label19.TabIndex = 41;
@@ -618,18 +654,17 @@
             // 
             // pscontact_box
             // 
+            this.pscontact_box.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
             this.pscontact_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pscontact_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.pscontact_box.Location = new System.Drawing.Point(400, 562);
+            this.pscontact_box.Location = new System.Drawing.Point(397, 573);
             this.pscontact_box.Name = "pscontact_box";
             this.pscontact_box.Size = new System.Drawing.Size(183, 23);
             this.pscontact_box.TabIndex = 40;
             // 
             // policeStation_box
             // 
-            this.policeStation_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.policeStation_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.policeStation_box.Location = new System.Drawing.Point(110, 567);
             this.policeStation_box.Name = "policeStation_box";
@@ -641,7 +676,7 @@
             this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(311, 561);
+            this.label18.Location = new System.Drawing.Point(319, 563);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(71, 34);
             this.label18.TabIndex = 38;
@@ -651,27 +686,26 @@
             // label17
             // 
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(18, 556);
+            this.label17.Location = new System.Drawing.Point(35, 555);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(71, 34);
             this.label17.TabIndex = 37;
             this.label17.Text = "Police Station :";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // contact_box
             // 
-            this.contact_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.contact_box.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.contact_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.contact_box.Location = new System.Drawing.Point(110, 467);
+            this.contact_box.Location = new System.Drawing.Point(111, 516);
             this.contact_box.Name = "contact_box";
-            this.contact_box.Size = new System.Drawing.Size(183, 23);
+            this.contact_box.Size = new System.Drawing.Size(175, 23);
             this.contact_box.TabIndex = 34;
             // 
             // identificationMark_box
             // 
             this.identificationMark_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.identificationMark_box.Location = new System.Drawing.Point(110, 407);
+            this.identificationMark_box.Location = new System.Drawing.Point(110, 375);
             this.identificationMark_box.Multiline = true;
             this.identificationMark_box.Name = "identificationMark_box";
             this.identificationMark_box.Size = new System.Drawing.Size(183, 35);
@@ -679,14 +713,13 @@
             // 
             // label15
             // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(12, 405);
+            this.label15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label15.Location = new System.Drawing.Point(13, 366);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(85, 37);
             this.label15.TabIndex = 32;
-            this.label15.Text = "Identification Mark :";
+            this.label15.Text = "Identification Mark            :";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // permanentAddress_box
@@ -694,7 +727,7 @@
             this.permanentAddress_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.permanentAddress_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.permanentAddress_box.Location = new System.Drawing.Point(110, 346);
+            this.permanentAddress_box.Location = new System.Drawing.Point(110, 309);
             this.permanentAddress_box.Multiline = true;
             this.permanentAddress_box.Name = "permanentAddress_box";
             this.permanentAddress_box.Size = new System.Drawing.Size(473, 46);
@@ -703,19 +736,19 @@
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(12, 349);
+            this.label14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label14.Location = new System.Drawing.Point(13, 311);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(77, 37);
+            this.label14.Size = new System.Drawing.Size(85, 37);
             this.label14.TabIndex = 30;
-            this.label14.Text = "Permanent Address :";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label14.Text = "Permanent Address      :";
             // 
             // bloodGrpCombo
             // 
             this.bloodGrpCombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bloodGrpCombo.FormattingEnabled = true;
-            this.bloodGrpCombo.Location = new System.Drawing.Point(400, 238);
+            this.bloodGrpCombo.Location = new System.Drawing.Point(111, 205);
             this.bloodGrpCombo.Name = "bloodGrpCombo";
             this.bloodGrpCombo.Size = new System.Drawing.Size(137, 24);
             this.bloodGrpCombo.TabIndex = 29;
@@ -723,19 +756,19 @@
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(312, 231);
+            this.label13.Location = new System.Drawing.Point(7, 209);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(72, 36);
+            this.label13.Size = new System.Drawing.Size(97, 29);
             this.label13.TabIndex = 28;
             this.label13.Text = "Blood Group :";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label13.UseMnemonic = false;
             // 
             // height_box
             // 
             this.height_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.height_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.height_box.Location = new System.Drawing.Point(110, 238);
+            this.height_box.Location = new System.Drawing.Point(478, 141);
             this.height_box.Name = "height_box";
             this.height_box.Size = new System.Drawing.Size(103, 23);
             this.height_box.TabIndex = 27;
@@ -743,7 +776,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 238);
+            this.label4.Location = new System.Drawing.Point(395, 141);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 20);
             this.label4.TabIndex = 26;
@@ -755,7 +788,7 @@
             this.email_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.email_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.email_box.Location = new System.Drawing.Point(398, 163);
+            this.email_box.Location = new System.Drawing.Point(399, 515);
             this.email_box.Name = "email_box";
             this.email_box.Size = new System.Drawing.Size(185, 23);
             this.email_box.TabIndex = 25;
@@ -763,7 +796,7 @@
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(312, 163);
+            this.label12.Location = new System.Drawing.Point(305, 515);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(71, 20);
             this.label12.TabIndex = 24;
@@ -773,7 +806,7 @@
             // branch_combo
             // 
             this.branch_combo.FormattingEnabled = true;
-            this.branch_combo.Location = new System.Drawing.Point(488, 125);
+            this.branch_combo.Location = new System.Drawing.Point(486, 97);
             this.branch_combo.Name = "branch_combo";
             this.branch_combo.Size = new System.Drawing.Size(95, 24);
             this.branch_combo.TabIndex = 23;
@@ -781,7 +814,7 @@
             // dept_combo
             // 
             this.dept_combo.FormattingEnabled = true;
-            this.dept_combo.Location = new System.Drawing.Point(307, 125);
+            this.dept_combo.Location = new System.Drawing.Point(305, 97);
             this.dept_combo.Name = "dept_combo";
             this.dept_combo.Size = new System.Drawing.Size(95, 24);
             this.dept_combo.TabIndex = 22;
@@ -789,7 +822,7 @@
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(408, 129);
+            this.label11.Location = new System.Drawing.Point(406, 101);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 20);
             this.label11.TabIndex = 21;
@@ -799,7 +832,7 @@
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(256, 126);
+            this.label10.Location = new System.Drawing.Point(254, 98);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 20);
             this.label10.TabIndex = 20;
@@ -809,7 +842,7 @@
             // rankCombo
             // 
             this.rankCombo.FormattingEnabled = true;
-            this.rankCombo.Location = new System.Drawing.Point(110, 125);
+            this.rankCombo.Location = new System.Drawing.Point(108, 97);
             this.rankCombo.Name = "rankCombo";
             this.rankCombo.Size = new System.Drawing.Size(140, 24);
             this.rankCombo.TabIndex = 19;
@@ -820,19 +853,29 @@
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(311, 407);
+            this.label9.Location = new System.Drawing.Point(312, 200);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(71, 35);
             this.label9.TabIndex = 18;
             this.label9.Text = "Marital Status :";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(10, 466);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(81, 36);
+            this.label16.TabIndex = 17;
+            this.label16.Text = "Date of Retirement :";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 511);
+            this.label7.Location = new System.Drawing.Point(7, 413);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 33);
+            this.label7.Size = new System.Drawing.Size(84, 42);
             this.label7.TabIndex = 17;
             this.label7.Text = "Date of Joining :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -845,17 +888,26 @@
             this.maritalStatus_combo.Items.AddRange(new object[] {
             "Married",
             "Unmarriede"});
-            this.maritalStatus_combo.Location = new System.Drawing.Point(411, 413);
+            this.maritalStatus_combo.Location = new System.Drawing.Point(412, 206);
             this.maritalStatus_combo.Name = "maritalStatus_combo";
             this.maritalStatus_combo.Size = new System.Drawing.Size(172, 24);
             this.maritalStatus_combo.TabIndex = 16;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(110, 469);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(272, 23);
+            this.dateTimePicker1.TabIndex = 12;
+            // 
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(12, 467);
+            this.label8.Location = new System.Drawing.Point(28, 518);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 20);
+            this.label8.Size = new System.Drawing.Size(63, 20);
             this.label8.TabIndex = 15;
             this.label8.Text = "Contact :";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -864,7 +916,7 @@
             // 
             this.doj_datetimepicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.doj_datetimepicker.Location = new System.Drawing.Point(110, 514);
+            this.doj_datetimepicker.Location = new System.Drawing.Point(110, 423);
             this.doj_datetimepicker.Name = "doj_datetimepicker";
             this.doj_datetimepicker.Size = new System.Drawing.Size(272, 23);
             this.doj_datetimepicker.TabIndex = 12;
@@ -872,7 +924,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 198);
+            this.label6.Location = new System.Drawing.Point(26, 173);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 20);
             this.label6.TabIndex = 11;
@@ -883,15 +935,16 @@
             // 
             this.dob_dateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dob_dateTimePicker.Location = new System.Drawing.Point(110, 198);
+            this.dob_dateTimePicker.Location = new System.Drawing.Point(110, 168);
             this.dob_dateTimePicker.Name = "dob_dateTimePicker";
-            this.dob_dateTimePicker.Size = new System.Drawing.Size(272, 23);
+            this.dob_dateTimePicker.Size = new System.Drawing.Size(273, 23);
             this.dob_dateTimePicker.TabIndex = 10;
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 294);
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label5.Location = new System.Drawing.Point(29, 252);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 37);
             this.label5.TabIndex = 9;
@@ -903,7 +956,7 @@
             this.presentAddress_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.presentAddress_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.presentAddress_box.Location = new System.Drawing.Point(110, 285);
+            this.presentAddress_box.Location = new System.Drawing.Point(110, 248);
             this.presentAddress_box.Multiline = true;
             this.presentAddress_box.Name = "presentAddress_box";
             this.presentAddress_box.Size = new System.Drawing.Size(473, 46);
@@ -912,7 +965,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(-5, 164);
+            this.label3.Location = new System.Drawing.Point(10, 137);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 20);
             this.label3.TabIndex = 5;
@@ -922,60 +975,60 @@
             // nationalId_box
             // 
             this.nationalId_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.nationalId_box.Location = new System.Drawing.Point(110, 166);
+            this.nationalId_box.Location = new System.Drawing.Point(110, 136);
             this.nationalId_box.Name = "nationalId_box";
-            this.nationalId_box.Size = new System.Drawing.Size(170, 23);
+            this.nationalId_box.Size = new System.Drawing.Size(272, 23);
             this.nationalId_box.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 125);
+            this.label2.Location = new System.Drawing.Point(28, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Rank :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // lblPersonalNo
+            // 
+            this.lblPersonalNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPersonalNo.Location = new System.Drawing.Point(4, 30);
+            this.lblPersonalNo.Name = "lblPersonalNo";
+            this.lblPersonalNo.Size = new System.Drawing.Size(100, 20);
+            this.lblPersonalNo.TabIndex = 1;
+            this.lblPersonalNo.Text = "Personnel No :";
+            this.lblPersonalNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 82);
+            this.label1.Location = new System.Drawing.Point(29, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Name :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // text_name
-            // 
-            this.text_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.text_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.text_name.Location = new System.Drawing.Point(110, 82);
-            this.text_name.Name = "text_name";
-            this.text_name.Size = new System.Drawing.Size(473, 23);
-            this.text_name.TabIndex = 0;
-            // 
-            // lblPersonalNo
-            // 
-            this.lblPersonalNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPersonalNo.Location = new System.Drawing.Point(5, 38);
-            this.lblPersonalNo.Name = "lblPersonalNo";
-            this.lblPersonalNo.Size = new System.Drawing.Size(105, 20);
-            this.lblPersonalNo.TabIndex = 1;
-            this.lblPersonalNo.Text = "Personnel No :";
-            this.lblPersonalNo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // tbPersonnelNo
             // 
             this.tbPersonnelNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbPersonnelNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tbPersonnelNo.Location = new System.Drawing.Point(110, 36);
+            this.tbPersonnelNo.Location = new System.Drawing.Point(110, 27);
             this.tbPersonnelNo.Name = "tbPersonnelNo";
             this.tbPersonnelNo.Size = new System.Drawing.Size(204, 23);
             this.tbPersonnelNo.TabIndex = 0;
+            // 
+            // text_name
+            // 
+            this.text_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.text_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.text_name.Location = new System.Drawing.Point(110, 64);
+            this.text_name.Name = "text_name";
+            this.text_name.Size = new System.Drawing.Size(473, 23);
+            this.text_name.TabIndex = 0;
             // 
             // EmployeeRegistrationView
             // 
@@ -1080,5 +1133,9 @@
         private System.Windows.Forms.TextBox signature_box;
         private System.Windows.Forms.Label lblPersonalNo;
         private System.Windows.Forms.TextBox tbPersonnelNo;
+        private System.Windows.Forms.Button Pickbtn;
+        private System.Windows.Forms.Button pickFingerPrint;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

@@ -29,7 +29,12 @@ namespace NavAppDesktopRegistration
             _prevForm = prevForm;
         }
         #endregion
+
         #region events or callback
+        private void addRank_Click(object sender, EventArgs e)
+        {
+
+        }
 
         #endregion
     }

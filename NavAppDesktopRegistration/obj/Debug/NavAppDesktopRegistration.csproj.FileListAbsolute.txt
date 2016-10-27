@@ -100,3 +100,4 @@ C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\obj\Debug\Na
 C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.BranchUpdateView.resources
 C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\bin\Debug\VBTablet.dll
 C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.signaturePadView.resources
+C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\bin\Debug\Images\whiteBG.jpg

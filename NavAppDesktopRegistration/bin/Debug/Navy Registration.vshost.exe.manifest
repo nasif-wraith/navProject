@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Navy Registration.exe" size="1789952">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Navy Registration.exe" size="1773568">
       <assemblyIdentity name="Navy Registration" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+N1/3PCroXmxGS6Zujm6ONVN7f0qVCmLCmMSIjfBFdk=</dsig:DigestValue>
+        <dsig:DigestValue>1IvOACZMRzQrJkOmhS825pg/9L8oQrstDZYXTw4YaA4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,6 +73,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>WxRX7niSGZbw0VWbq5OvfkWElkksHqp6D+ecyJrtCZk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\whiteBG.jpg" size="5679">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>v8AFwJtT0ZxddzKuM0ZjZmjaDdF1wWKRmoWxSrlihQw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Logo.ico" size="1150">
