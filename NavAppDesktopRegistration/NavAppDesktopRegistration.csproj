@@ -104,6 +104,12 @@
     <Compile Include="View\BranchUpdateView.Designer.cs">
       <DependentUpon>BranchUpdateView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\BranchDeleteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BranchDeleteView.Designer.cs">
+      <DependentUpon>BranchDeleteView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\DepartmentCreateView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,12 @@
     <Compile Include="View\UserAdd.Designer.cs">
       <DependentUpon>UserAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\UserEditView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserEditView.Designer.cs">
+      <DependentUpon>UserEditView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -169,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\BranchUpdateView.resx">
       <DependentUpon>BranchUpdateView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BranchDeleteView.resx">
+      <DependentUpon>BranchDeleteView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\DepartmentCreateView.resx">
       <DependentUpon>DepartmentCreateView.cs</DependentUpon>
@@ -193,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\UserAdd.resx">
       <DependentUpon>UserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserEditView.resx">
+      <DependentUpon>UserEditView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="NavAppDesktopRegistration_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
@@ -257,6 +275,12 @@
     </Content>
     <Content Include="Images\propic.png" />
     <Content Include="Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\C# Fingerprint\ZK-Finger.csproj">
+      <Project>{e71e9528-cf89-4df2-8c46-abc8e2efdb1e}</Project>
+      <Name>ZK-Finger</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

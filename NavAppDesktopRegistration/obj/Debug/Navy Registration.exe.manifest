@@ -43,14 +43,50 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Navy Registration.exe" size="1773568">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.ZKFPEngXControl.dll" size="36864">
+      <assemblyIdentity name="AxInterop.ZKFPEngXControl" version="4.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ccucoOg6sDqji/EWU4Bblm8MSNizkWbHCEYAX61aQlw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.ZKFPEngXControl.dll" size="40960">
+      <assemblyIdentity name="Interop.ZKFPEngXControl" version="4.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SPYevLqhNnyv8kxBk3ffWGGpy/NhoUWJK4un1lP2ylQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Navy Registration.exe" size="1780224">
       <assemblyIdentity name="Navy Registration" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>P+if+zBKS02iQDqkTC1Tl1OKzrbPuhEBstYi6LeXFUQ=</dsig:DigestValue>
+        <dsig:DigestValue>PorXStIlg6Rnc7kLbgsu5kwWaeQcg69Yq/HIYs6ZRtU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="32416">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kCQY+MhVs4g1JJATqJ6cQKYi3oKSQ9v41LUbyj9IkfQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,6 +99,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>6Of4+Sdv0bIHFwS1+rz+ksMKkqJMgez1g7cU5T5KTFo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zkfinger_demo.exe" size="24064">
+      <assemblyIdentity name="zkfinger_demo" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qBC00TOLk2vs8FD7xgrhiIjjpXL5HVxwhqz5+AbtLxQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

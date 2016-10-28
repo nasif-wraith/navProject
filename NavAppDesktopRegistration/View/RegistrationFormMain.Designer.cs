@@ -40,7 +40,7 @@
             this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UserAddMS = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.UserEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.profileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.rankToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,8 +49,8 @@
             this.deleteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.brnahcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BranchAddMS = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.BranchEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteBranchMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.departmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AddDepartmentMS = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
@@ -155,7 +155,7 @@
             // 
             this.userToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.UserAddMS,
-            this.editToolStripMenuItem2,
+            this.UserEdit,
             this.deleteToolStripMenuItem1,
             this.profileToolStripMenuItem1});
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
@@ -169,11 +169,12 @@
             this.UserAddMS.Text = "Add";
             this.UserAddMS.Click += new System.EventHandler(this.UserAddMS_Click);
             // 
-            // editToolStripMenuItem2
+            // UserEdit
             // 
-            this.editToolStripMenuItem2.Name = "editToolStripMenuItem2";
-            this.editToolStripMenuItem2.Size = new System.Drawing.Size(117, 24);
-            this.editToolStripMenuItem2.Text = "Edit";
+            this.UserEdit.Name = "UserEdit";
+            this.UserEdit.Size = new System.Drawing.Size(117, 24);
+            this.UserEdit.Text = "Edit";
+            this.UserEdit.Click += new System.EventHandler(this.UserEdit_Click);
             // 
             // deleteToolStripMenuItem1
             // 
@@ -220,8 +221,8 @@
             // 
             this.brnahcToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.BranchAddMS,
-            this.editToolStripMenuItem4,
-            this.deleteToolStripMenuItem3});
+            this.BranchEdit,
+            this.deleteBranchMenu});
             this.brnahcToolStripMenuItem.Name = "brnahcToolStripMenuItem";
             this.brnahcToolStripMenuItem.Size = new System.Drawing.Size(63, 23);
             this.brnahcToolStripMenuItem.Text = "Branch";
@@ -233,18 +234,19 @@
             this.BranchAddMS.Text = "Add";
             this.BranchAddMS.Click += new System.EventHandler(this.BranchAddMS_Click);
             // 
-            // editToolStripMenuItem4
+            // BranchEdit
             // 
-            this.editToolStripMenuItem4.Name = "editToolStripMenuItem4";
-            this.editToolStripMenuItem4.Size = new System.Drawing.Size(152, 24);
-            this.editToolStripMenuItem4.Text = "Edit";
-            this.editToolStripMenuItem4.Click += new System.EventHandler(this.editToolStripMenuItem4_Click);
+            this.BranchEdit.Name = "BranchEdit";
+            this.BranchEdit.Size = new System.Drawing.Size(152, 24);
+            this.BranchEdit.Text = "Edit";
+            this.BranchEdit.Click += new System.EventHandler(this.BranchEdit_Click);
             // 
-            // deleteToolStripMenuItem3
+            // deleteBranchMenu
             // 
-            this.deleteToolStripMenuItem3.Name = "deleteToolStripMenuItem3";
-            this.deleteToolStripMenuItem3.Size = new System.Drawing.Size(152, 24);
-            this.deleteToolStripMenuItem3.Text = "Delete";
+            this.deleteBranchMenu.Name = "deleteBranchMenu";
+            this.deleteBranchMenu.Size = new System.Drawing.Size(152, 24);
+            this.deleteBranchMenu.Text = "Delete";
+            this.deleteBranchMenu.Click += new System.EventHandler(this.deleteBranchMenu_Click);
             // 
             // departmentToolStripMenuItem
             // 
@@ -472,7 +474,7 @@
         private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem UserAddMS;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem UserEdit;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
@@ -492,8 +494,8 @@
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem brnahcToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem BranchAddMS;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem BranchEdit;
+        private System.Windows.Forms.ToolStripMenuItem deleteBranchMenu;
         private System.Windows.Forms.ToolStripMenuItem departmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AddDepartmentMS;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem5;

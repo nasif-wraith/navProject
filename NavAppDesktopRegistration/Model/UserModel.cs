@@ -11,6 +11,7 @@ namespace NavAppDesktopRegistration
         public int UserID { get; set; }
         public bool IsSuperAdmin { get; set; }
         public int EmployeeID { get; set; }
+        public string  UserName { get; set; }
         public string Password { get; set; }
         public string PreviousPassword { get; set; }
         public bool IsActive { get; set; }

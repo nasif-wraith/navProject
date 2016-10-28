@@ -17,9 +17,11 @@ namespace NavAppDesktopRegistration
         private Form _previousForm;
         private EmployeeRegistrationView _employeeRegistrationView ;
         private UserAdd _userAdd;
+        //private UserEdit _userEdit;
         private Rank _rank ;
         private BranchCreateView _branch;
         private BranchUpdateView _updateBranch;
+        private BranchDeleteView _deleteBranch;
         private DepartmentCreateView _dept;
         #endregion
 
@@ -106,6 +108,10 @@ namespace NavAppDesktopRegistration
             {
                 _updateBranch.Hide();
             }
+            if (_deleteBranch != null)
+            {
+                _deleteBranch.Hide();
+            }
         }
         #endregion
 
@@ -114,7 +120,6 @@ namespace NavAppDesktopRegistration
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
         private void CloseBtn_Click(object sender, EventArgs e)
         {
             formClose();
@@ -123,30 +128,36 @@ namespace NavAppDesktopRegistration
         {
             formClose();
         }
-        
-
         private void showBasicUserInfo(object sender, FormClosedEventArgs e)
         {
            // throw new NotImplementedException();
             showHideUserInfo(true);
         }
-        
         private void LogoutExitLink_Click(object sender, EventArgs e)
         {
             formClose();
         }
-        #endregion
-
-        #region one instance will open methods
-        private void RankAddMS_Click(object sender, EventArgs e)
+        private void deleteBranchMenu_Click(object sender, EventArgs e)
         {
             hideotherforms();
             showHideUserInfo(false);
-            _rank = new Rank(_currentUser, _previousForm);
-            _rank.MdiParent = this;
-            _rank.Show();
-            _rank.FormClosed += showBasicUserInfo;
-            
+            _deleteBranch = new BranchDeleteView(_currentUser, _previousForm);
+            _deleteBranch.MdiParent = this;
+            _deleteBranch.Show();
+            _deleteBranch.FormClosed += showBasicUserInfo;
+        }
+        #endregion
+
+        #region one instance will open methods
+
+        private void BranchEdit_Click(object sender, EventArgs e)
+        {
+            hideotherforms();
+            showHideUserInfo(false);
+            _updateBranch = new BranchUpdateView(_currentUser, _previousForm);
+            _updateBranch.MdiParent = this;
+            _updateBranch.Show();
+            _updateBranch.FormClosed += showBasicUserInfo;
         }
         private void BranchAddMS_Click(object sender, EventArgs e)
         {
@@ -158,6 +169,17 @@ namespace NavAppDesktopRegistration
             _branch.FormClosed += showBasicUserInfo;
 
         }
+        private void RankAddMS_Click(object sender, EventArgs e)
+        {
+            hideotherforms();
+            showHideUserInfo(false);
+            _rank = new Rank(_currentUser, _previousForm);
+            _rank.MdiParent = this;
+            _rank.Show();
+            _rank.FormClosed += showBasicUserInfo;
+            
+        }
+        
         private void EmployeeAddMS_Click(object sender, EventArgs e)
         {
             hideotherforms();
@@ -189,17 +211,14 @@ namespace NavAppDesktopRegistration
             _userAdd.Show();
             _userAdd.FormClosed += showBasicUserInfo;
         }
+        private void UserEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
 
         #endregion
 
-        private void editToolStripMenuItem4_Click(object sender, EventArgs e)
-        {
-            hideotherforms();
-            showHideUserInfo(false);
-            _updateBranch = new BranchUpdateView(_currentUser, _previousForm);
-            _updateBranch.MdiParent = this;
-            _updateBranch.Show();
-            _updateBranch.FormClosed += showBasicUserInfo;
-        }
     }
 }

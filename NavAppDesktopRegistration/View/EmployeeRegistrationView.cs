@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 using VBTablet;
 using System.Diagnostics;
 using System.Drawing.Imaging;
-
+using Biokey01;
 namespace NavAppDesktopRegistration
 {
     
@@ -22,11 +22,13 @@ namespace NavAppDesktopRegistration
         #region private fields
         private UserModel _currentUser;
         private EmployeeModel _employee;
+        DatabaseHelper DBhelp;
         private string _signaturePath;
         private string _picturePath;
         private string _fingerprintPath;
         private Form _previousForm;
         private signaturePadView _signature;
+        private Biokey01.Form1 _finger;
         private Bitmap _bmp;
         private int i = 0;
         #endregion
@@ -113,6 +115,27 @@ namespace NavAppDesktopRegistration
                 }
             }
         }
+
+        private void getFingerImageToPictureBox(object sender, FormClosedEventArgs e)
+        {
+            finger_pictureBox.Load("template.bmp");
+            finger_pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            fingerprint_box.Text = finger_pictureBox.ImageLocation;
+            _fingerprintPath = fingerprint_box.Text;
+            Image im = Image.FromFile(finger_pictureBox.ImageLocation);
+            int size = 300;
+            Image newImage = ResizeImage(size, im);
+            //MessageBox.Show("path is  " + signature_box.ImageLocation)
+            using (Bitmap bitmap = (Bitmap)newImage)
+            {
+                using (Bitmap newBitmap = new Bitmap(bitmap))
+                {
+                    newBitmap.Save("fingerPrint" + ".jpg", ImageFormat.Jpeg);
+                    i++;
+                }
+            }
+        }
+
         #region private events or callback
         private void signature_btn_Click(object sender, EventArgs e)
         {
@@ -152,8 +175,10 @@ namespace NavAppDesktopRegistration
 
         private void finger_btn_Click(object sender, EventArgs e)
         {
-            
-            Process.Start(@"D:\C# Fingerprint\bin\Debug\zkfinger_demo");
+            //Process.Start(@"D:\C# Fingerprint\bin\Debug\zkfinger_demo");
+            _finger = new Form1();
+            _finger.Show();
+            _finger.FormClosed += getFingerImageToPictureBox;
         }
 
         private void close_employee_register_btn_Click(object sender, EventArgs e)
@@ -203,12 +228,20 @@ namespace NavAppDesktopRegistration
             _employee.CardID = "1";
             _employee.NationalID = nationalId_box.Text;
             _employee.FingerPrintPath = _fingerprintPath;
-            _employee.Rfid = Int32.Parse(RFID_box.Text);        
+            _employee.Rfid = Int32.Parse(RFID_box.Text);
             //dummy var
-            
 
-                       
-            DatabaseHelper DBhelp = new DatabaseHelper();
+
+            string text = _employee.EmployeeID + ";" + _employee.EmployeeName + ";" + _employee.RankID + ";" + _employee.DepartmentID + ";" + _employee.BranchID + ";" + _employee.IssuedCardID + ";" + _employee.Height + ";" + _employee.BloodGroup + ";" + _employee.IdentificationMark + ";" + _employee.EmployeeSignatureFilePath +  ";" + _employee.AuthorizedDate + ";" + _employee.DateOfIssue + ";" + _employee.EmployersCatagory + ";" + _employee.DateOfRetirement + ";" + _employee.DateOfJoining + ";" + _employee.MaritalStatus + ";" + _employee.PresentAdress + ";" + _employee.PermanentAddress + ";" + _employee.EmailAddress + ";" + _employee.ContactNumber + ";" + _employee.PoliceStation + ";" + _employee.PoliceStationContactNumber + ";" + _employee.FamilyPersonName + ";"
+                + _employee.FamilyPersonNID + ";" + _employee.FamilyPersonContactNumber + ";" + _employee.FamilyPersonPoliceStation + ";" + _employee.OfficeID + ";" + _employee.PreviousOfficeID + ";" + _employee.CreatedBy + ";" + _employee.CreatedDate + ";" + _employee.ModifiedBy + ";" + _employee.ModifiedDate + ";" + ";" + _employee.PersonalNo + ";" + _employee.DateOfBirth + ";" + _employee.EmployeeImagePath + ";" + _employee.CardID + ";" + _employee.NationalID + ";" + _employee.FingerPrintPath + ";" + _employee.Rfid + ";";
+            MessageBox.Show(text);
+
+            byte[] array = Encoding.ASCII.GetBytes(text);
+
+            string something = Encoding.ASCII.GetString(array);
+            MessageBox.Show(something);
+
+            DBhelp = new DatabaseHelper();
             int ID = DBhelp.InsertInEmployee(_employee, _currentUser);
             MessageBox.Show("everything is uploaded.", "success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

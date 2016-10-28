@@ -9,20 +9,25 @@ using System.Windows.Forms;
 
 namespace NavAppDesktopRegistration
 {
-    class MainDatabaseHelper
+    public class MainDatabaseHelper
     {
+        SqlConnection con;
+        public MainDatabaseHelper()
+        {
+            con = new SqlConnection(connection());
+        }
         string connection()
         {
             //string connectionString = @"Data Source=192.168.0.104,49170;Initial Catalog=beta_2 ;User ID=sa;Password=sa";
             string connectionString = @"Data Source=.;Initial Catalog=beta_2;Integrated Security=True";
             return connectionString;
         }
-        
+
+        #region for Branch
         public int RunQuerryInBranch(SqlCommand cmd)
         {
             try
             {
-                SqlConnection con = new SqlConnection(connection());
                 cmd.Connection = con;
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -37,18 +42,16 @@ namespace NavAppDesktopRegistration
             }
 
         }
-
         public void RunUpdateInBranch(SqlCommand cmd)
         {
             try
             {
-                SqlConnection con = new SqlConnection(connection());
                 cmd.Connection = con;
                 con.Open();
                 cmd.ExecuteNonQuery();
                 //int BranchID = Int32.Parse(cmd.Parameters["@BranchID"].Value.ToString());
                 con.Close();
-               // return BranchID;
+                // return BranchID;
             }
             catch (Exception e)
             {
@@ -57,12 +60,44 @@ namespace NavAppDesktopRegistration
             }
 
         }
+        public BranchModel GetDataFromBranch(SqlCommand cmd, BranchModel branch)
+        {
+            //try
+            //{
+            //BranchModel branch =  new BranchModel();
 
+            cmd.Connection = con;
+            con.Open();
+            SqlDataReader reader = null;
+            reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                branch.BranchName = (reader["BranchName"].ToString());
+                branch.Contact = (reader["Contact"].ToString());
+                branch.Address = (reader["Address"].ToString());
+            }
+            //cmd.ExecuteNonQuery();
+            //branch.BranchName = cmd.Parameters["@BranchName"].Value.ToString();
+            //branch.Address = cmd.Parameters["@Address"].Value.ToString();
+            //branch.Contact = cmd.Parameters["@Contact"].Value.ToString();
+            con.Close();
+            return branch;
+            //}
+            //catch (Exception e )
+            //{
+            //    MessageBox.Show("error in MDB");
+            //    throw;
+            //}
+
+        }
+        #endregion
+
+        #region for Employee
         public int RunQuerryInEmployee(SqlCommand cmd)
         {
             try
             {
-                SqlConnection con = new SqlConnection(connection());
+
                 cmd.Connection = con;
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -75,12 +110,14 @@ namespace NavAppDesktopRegistration
                 MessageBox.Show("problem occured" + e);
                 throw;
             }
-            
-        }
 
+        }
+        #endregion
+
+        #region for Department
         public int RunQueryInDepartment(SqlCommand cmd)
         {
-            SqlConnection con = new SqlConnection(connection());
+
             cmd.Connection = con;
             con.Open();
             cmd.ExecuteNonQuery();
@@ -88,36 +125,47 @@ namespace NavAppDesktopRegistration
             con.Close();
             return DepartmentID;
         }
+        #endregion
 
-        public BranchModel GetDataFromBranch(SqlCommand cmd, BranchModel branch)
+        #region for User
+        public int RunQueryInUser(SqlCommand cmd)
         {
-            //try
-            //{
-                //BranchModel branch =  new BranchModel();
-                SqlConnection con = new SqlConnection(connection());
+            try
+            {
                 cmd.Connection = con;
                 con.Open();
-            SqlDataReader reader = null;
-            reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-                branch.BranchName = (reader["BranchName"].ToString());
-                branch.Contact = (reader["Contact"].ToString());
-                branch.Address = (reader["Address"].ToString());
-            }
-                //cmd.ExecuteNonQuery();
-                //branch.BranchName = cmd.Parameters["@BranchName"].Value.ToString();
-                //branch.Address = cmd.Parameters["@Address"].Value.ToString();
-                //branch.Contact = cmd.Parameters["@Contact"].Value.ToString();
+                cmd.ExecuteNonQuery();
+                int userID = Int32.Parse(cmd.Parameters["@UserID"].Value.ToString());
                 con.Close();
-                return branch;
-            //}
-            //catch (Exception e )
-            //{
-            //    MessageBox.Show("error in MDB");
-            //    throw;
-            //}
-           
+                return userID;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("problem in inserting data" + e.ToString());
+                throw;
+            }
         }
+        #endregion
+
+        public void Delete(SqlCommand cmd, BranchModel branch)
+        {
+            try
+            {
+                cmd.Connection = con;
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("error in deleting");
+                throw;
+            }
+            
+        }
+
+       
+
+
     }
 }

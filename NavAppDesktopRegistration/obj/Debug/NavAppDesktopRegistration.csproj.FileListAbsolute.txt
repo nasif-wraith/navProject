@@ -101,3 +101,10 @@ C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\obj\Debug\Na
 C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\bin\Debug\VBTablet.dll
 C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.signaturePadView.resources
 C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\bin\Debug\Images\whiteBG.jpg
+C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\bin\Debug\zkfinger_demo.exe
+C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\bin\Debug\AxInterop.ZKFPEngXControl.dll
+C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\bin\Debug\Interop.ZKFPEngXControl.dll
+C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\bin\Debug\stdole.dll
+C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\bin\Debug\zkfinger_demo.pdb
+C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.View.UserEditView.resources
+C:\Users\Fahim-PC\Source\Repos\navProject\NavAppDesktopRegistration\obj\Debug\NavAppDesktopRegistration.BranchDeleteView.resources

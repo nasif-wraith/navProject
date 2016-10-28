@@ -73,7 +73,17 @@ namespace NavAppDesktopRegistration
             //int BranchID = int.Parse(cmd.Parameters["@BranchID"].Value.ToString());
             //return BranchID;
         }
-
+        
+        public void DeleteFromBranch(BranchModel branchModel)
+        {
+            MDBHelper = new MainDatabaseHelper();
+            BranchModel branch = new BranchModel();
+            SqlCommand cmd = new SqlCommand("Delete  from Branches where BranchID = " + branchModel.BranchID);
+            //SqlCommand cmd = new SqlCommand("GetBranchInfo");
+            //cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandType = CommandType.Text;
+            MDBHelper.Delete(cmd, branch);
+        }
         #endregion
 
         #region Insert Update Delete in Employee
@@ -159,12 +169,35 @@ namespace NavAppDesktopRegistration
             cmd.Parameters.AddWithValue("@CreatedBy", currentUser.UserID);
             cmd.Parameters.AddWithValue("@CreatedDate", DateTime.Now);
             cmd.Parameters.AddWithValue("@ModifiedBy", currentUser.UserID);
-            cmd.Parameters.AddWithValue("@ModifiedDate", DateTime.Now);
+            cmd.Parameters.AddWithValue("@Modifiedate", DateTime.Now);
+            cmd.Parameters.AddWithValue("@DeptBranch",dept.DeptBranch);
             cmd.Parameters.Add("@DepartmentID", SqlDbType.Int).Direction = ParameterDirection.Output;
             int departmentID = MDBHelper.RunQueryInDepartment(cmd);
             return departmentID;
         }
         #endregion
 
+        #region insert update delete in User
+        public int InsertIntoUser(UserModel user, UserModel currentUser)
+        {
+            MDBHelper = new MainDatabaseHelper();
+            SqlCommand cmd = new SqlCommand("InsertUsers");
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@EmployeeID", user.EmployeeID);
+            cmd.Parameters.AddWithValue("@IsSuperAdmin", user.IsSuperAdmin);
+            cmd.Parameters.AddWithValue("@Password", user.Password);
+            cmd.Parameters.AddWithValue("@PreviousPasswords", user.PreviousPassword);
+            cmd.Parameters.AddWithValue("@IsActive", user.IsActive);
+            cmd.Parameters.AddWithValue("@CreatedBy", currentUser.UserID);
+            cmd.Parameters.AddWithValue("@CreatedDate", DateTime.Now);
+            cmd.Parameters.AddWithValue("@ModifiedBy", currentUser.UserID); //needs to be discussed
+            cmd.Parameters.AddWithValue("@ModifiedDate", DateTime.Now); //needs to know what to implement
+            cmd.Parameters.AddWithValue("@IsAdmin", user.IsActive);
+            cmd.Parameters.AddWithValue("@UserName", user.UserName);
+            cmd.Parameters.Add("@UserID", SqlDbType.Int).Direction = ParameterDirection.Output;
+            int ID = MDBHelper.RunQueryInUser(cmd);
+            return ID;
+        }
+        #endregion
     }
 }
